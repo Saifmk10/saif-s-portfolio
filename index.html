@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIFMK</title>
+    <link rel="stylesheet" href="output.css">
+</head> 
+<body>
+    <!-- this is the parent div for the home page that is holding the elements shown when the website opens up -->
+    <section class="h-home-parent-container  m-4 p-2 rounded-lg  bg-Primary-Color">
+
+
+        <!-- this nav bar is gonna hold the email section and also the link to other platforms -->
+         <!-- there is some glitch here due to which the nav is not seen for tab prio-10 -->
+        <nav class="hidden lg:grid grid-cols-2  justify-evenly p-[20px]"> 
+            <!-- the bellow code is mainly for large screen (laptops) -->
+            <!-- this contains the hidden class so that if screen smaller then nav wont be displayed -->
+            <div class="bg-Email-section w-[400px] h-[50px] rounded-[80px] flex items-center justify-evenly">
+                <h3 class="p-[10px] font-isf font-isf-weight text-[15px]">
+                    Saifmkpvt@gmail.com
+                </h3>
+                <button class="bg-buttons  p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight">
+                    Copy
+                </button>
+                <button class="bg-buttons p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight">
+                    CV
+                </button>
+            </div>
+            <div class=" flex items-center justify-self-end">
+                <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/" target="_blank" class="font-isf font-isf-weight">Linkdin / </a>
+                <a href="https://git   hub.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19 "  target="_blank" class="ml-1 font-isf font-isf-weight">Github / </a>
+                <a href="https://www.instagram.com/saifmk10/"  target="_blank" class="ml-1 font-isf font-isf-weight">Instagram</a>
+            </div>
+        </nav>
+
+
+
+        <!-- mobile design for the nav bar -->
+        <nav class="lg:hidden bg-Email-section h-[50px] min-w-fit m-3 p-4 rounded-[80px] flex justify-evenly items-center ">
+            <!-- Icons for mobile navigation added bellow-->
+
+            <!-- email icon-link to copy -->
+            <a href="mailto:Saifmkpvt@gmail.com" class="text-black">
+                <img src="./resources-for-web/email-logo.svg" alt="Email" class="w-8 h-8">
+            </a>
+            <!-- linkedin icon-link -->
+            <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/" target="_blank" class="text-black">
+                <img src="/resources-for-web/linkedin-logo.svg" alt="LinkedIn" class="w-8 h-8">
+              </a>
+            <!-- Github-icon-link -->
+            <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19" target="_blank" class="text-black">
+                <img src="./resources-for-web/github.svg" alt="Github" class="w-8 h-8">
+            </a>
+            <!-- Instagram-icon-link -->
+            <a href="https://www.instagram.com/saifmk10/" target="_blank" class="text-black">
+              <img src="/resources-for-web/instagram-logo.svg" alt="Instagram" class="w-8 h-8">
+            </a>        
+        </nav>
+
+
+
+        <!-- this bellow divs will hold the content for the intro(profile , about , aimation) -->
+        <div class=" p-[50px] grid grid-rows-[auto , auto , auto]">
+
+            <!-- bellow div hold the profile pic also made responsive -->
+            <div class="m-[10px] p-[20px] flex justify-center items-center sm:m-[1px] p-[5px]">
+                <img src="/resources-for-web/profile-image.svg" alt="profile-image" class="h-[200px] w-[200px] || ">
+            </div>
+
+            <!-- the bellow div contains the intro (hey -- iam)-->
+            <div class="flex justify-center">
+                <h2 class="flex items-center gap-4 font-kf font-kf-weight text-[50px] || sm:text-[31px] gap-3  lg:text-[50px] md:text-[0px]">
+                    HEY<span><img src="./resources-for-web/wave-hand-image.svg" alt="hand waving" class="h-[40px] sm:h-[22px]"></span>I DO
+                </h2>
+            </div>
+
+            <!-- this is for the typograph of the things i do -->
+            <div>
+                <h3>
+                    
+                </h3>
+            </div>
+        </div>
+    </section>  
+</body>
+</html>
+  

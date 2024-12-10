@@ -1,0 +1,37 @@
+{
+  "name": "resource-folder-tailwind",
+  "version": "1.0.0",
+  "description": "My porfolio to showcase my work , skills and who i am ",
+  "main": "index.html",
+  "scripts": {
+    "test": "(echo \"No test has been specified\" && exit 1)" , 
+    "watch": "tailwindcss -i \"C:/Users/saif/Desktop/Portfolio/style.css\" -o \"C:/Users/saif/Desktop/Portfolio/output.css\" --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saifmk10/saif-s-portfolio.git"
+  },
+  "keywords": [
+    "saif's",
+    "portfolio",
+    "website",
+    "minimal",
+    "black",
+    "and",
+    "white",
+    "creative",
+    "project",
+    "freelance",
+    "developer",
+    "web-design"
+  ],
+  "author": "saifmk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saifmk10/saif-s-portfolio/issues"
+  },
+  "homepage": "https://github.com/Saifmk10/saif-s-portfolio#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}
