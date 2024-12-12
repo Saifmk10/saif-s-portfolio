@@ -560,6 +560,50 @@ video {
   display: none;
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.bottom-\[10px\]{
+  bottom: 10px;
+}
+
+.top-1{
+  top: 0.25rem;
+}
+
+.top-\[10px\]{
+  top: 10px;
+}
+
+.top-\[500px\]{
+  top: 500px;
+}
+
+.top-\[300px\]{
+  top: 300px;
+}
+
+.top-\[400px\]{
+  top: 400px;
+}
+
+.top-\[380px\]{
+  top: 380px;
+}
+
+.top-\[320px\]{
+  top: 320px;
+}
+
+.top-\[340px\]{
+  top: 340px;
+}
+
 .m-3{
   margin: 0.75rem;
 }
@@ -574,6 +618,10 @@ video {
 
 .ml-1{
   margin-left: 0.25rem;
+}
+
+.inline{
+  display: inline;
 }
 
 .flex{
@@ -596,6 +644,10 @@ video {
   height: 200px;
 }
 
+.h-\[28px\]{
+  height: 28px;
+}
+
 .h-\[40px\]{
   height: 40px;
 }
@@ -606,6 +658,10 @@ video {
 
 .h-home-parent-container{
   height: 750px;
+}
+
+.h-\[210px\]{
+  height: 210px;
 }
 
 .w-8{
@@ -622,6 +678,10 @@ video {
 
 .w-\[70px\]{
   width: 70px;
+}
+
+.w-auto{
+  width: auto;
 }
 
 .min-w-fit{
@@ -645,8 +705,8 @@ video {
   justify-content: space-evenly;
 }
 
-.gap-3{
-  gap: 0.75rem;
+.gap-2{
+  gap: 0.5rem;
 }
 
 .gap-4{
@@ -712,6 +772,22 @@ video {
   padding: 8px;
 }
 
+.p-\[30px\]{
+  padding: 30px;
+}
+
+.p-\[15px\]{
+  padding: 15px;
+}
+
+.pt-\[10px\]{
+  padding-top: 10px;
+}
+
+.pt-\[15px\]{
+  padding-top: 15px;
+}
+
 .font-isf{
   font-family: "Instrument Sans", serif;
 }
@@ -742,22 +818,170 @@ video {
 }
 
 @media (min-width: 320px){
+  .sm\:absolute{
+    position: absolute;
+  }
+
+  .sm\:top-\[340px\]{
+    top: 340px;
+  }
+
   .sm\:m-\[1px\]{
     margin: 1px;
   }
 
-  .sm\:h-\[22px\]{
-    height: 22px;
+  .sm\:h-\[30px\]{
+    height: 30px;
   }
 
-  .sm\:text-\[31px\]{
-    font-size: 31px;
+  .sm\:h-\[200px\]{
+    height: 200px;
+  }
+
+  .sm\:h-\[220px\]{
+    height: 220px;
+  }
+
+  .sm\:h-\[20px\]{
+    height: 20px;
+  }
+
+  .sm\:h-\[10px\]{
+    height: 10px;
+  }
+
+  .sm\:h-\[150px\]{
+    height: 150px;
+  }
+
+  .sm\:h-\[120px\]{
+    height: 120px;
+  }
+
+  .sm\:h-\[190px\]{
+    height: 190px;
+  }
+
+  .sm\:h-\[180px\]{
+    height: 180px;
+  }
+
+  .sm\:h-\[160px\]{
+    height: 160px;
+  }
+
+  .sm\:w-auto{
+    width: auto;
+  }
+
+  .sm\:gap-2{
+    gap: 0.5rem;
+  }
+
+  .sm\:p-\[0px\]{
+    padding: 0px;
+  }
+
+  .sm\:p-\[5px\]{
+    padding: 5px;
+  }
+
+  .sm\:p-\[7px\]{
+    padding: 7px;
+  }
+
+  .sm\:p-\[3px\]{
+    padding: 3px;
+  }
+
+  .sm\:p-\[1px\]{
+    padding: 1px;
+  }
+
+  .sm\:pt-\[-10px\]{
+    padding-top: -10px;
+  }
+
+  .sm\:pt-\[-30px\]{
+    padding-top: -30px;
+  }
+
+  .sm\:pt-\[3px\]{
+    padding-top: 3px;
+  }
+
+  .sm\:pt-\[1px\]{
+    padding-top: 1px;
+  }
+
+  .sm\:text-\[25px\]{
+    font-size: 25px;
   }
 }
 
 @media (min-width: 640px){
-  .md\:text-\[0px\]{
-    font-size: 0px;
+  .md\:h-\[40px\]{
+    height: 40px;
+  }
+
+  .md\:h-\[22px\]{
+    height: 22px;
+  }
+
+  .md\:h-\[24px\]{
+    height: 24px;
+  }
+
+  .md\:h-\[\]{
+    height: ;
+  }
+
+  .md\:h-\[30px\]{
+    height: 30px;
+  }
+
+  .md\:h-\[100px\]{
+    height: 100px;
+  }
+
+  .md\:h-\[20px\]{
+    height: 20px;
+  }
+
+  .md\:h-\[150px\]{
+    height: 150px;
+  }
+
+  .md\:h-\[10px\]{
+    height: 10px;
+  }
+
+  .md\:gap-2{
+    gap: 0.5rem;
+  }
+
+  .md\:p-\[3px\]{
+    padding: 3px;
+  }
+
+  .md\:p-\[1px\]{
+    padding: 1px;
+  }
+
+  .md\:pt-\[-30px\]{
+    padding-top: -30px;
+  }
+
+  .md\:pt-\[3px\]{
+    padding-top: 3px;
+  }
+
+  .md\:pt-\[200px\]{
+    padding-top: 200px;
+  }
+
+  .md\:text-\[30px\]{
+    font-size: 30px;
   }
 }
 
@@ -770,7 +994,63 @@ video {
     display: none;
   }
 
-  .lg\:text-\[50px\]{
-    font-size: 50px;
+  .lg\:h-\[40px\]{
+    height: 40px;
+  }
+
+  .lg\:h-\[25px\]{
+    height: 25px;
+  }
+
+  .lg\:h-\[190px\]{
+    height: 190px;
+  }
+
+  .lg\:h-\[200px\]{
+    height: 200px;
+  }
+
+  .lg\:h-\[210px\]{
+    height: 210px;
+  }
+
+  .lg\:gap-2{
+    gap: 0.5rem;
+  }
+
+  .lg\:p-\[6px\]{
+    padding: 6px;
+  }
+
+  .lg\:p-\[3px\]{
+    padding: 3px;
+  }
+
+  .lg\:p-\[220px\]{
+    padding: 220px;
+  }
+
+  .lg\:p-\[200px\]{
+    padding: 200px;
+  }
+
+  .lg\:p-\[1px\]{
+    padding: 1px;
+  }
+
+  .lg\:pt-\[-30px\]{
+    padding-top: -30px;
+  }
+
+  .lg\:pt-\[3px\]{
+    padding-top: 3px;
+  }
+
+  .lg\:pt-\[5px\]{
+    padding-top: 5px;
+  }
+
+  .lg\:text-\[35px\]{
+    font-size: 35px;
   }
 }
