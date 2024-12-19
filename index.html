@@ -29,7 +29,7 @@
             </div>
             <div class=" flex items-center justify-self-end">
                 <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/" target="_blank" class="font-isf font-isf-weight">Linkdin / </a>
-                <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19 "  target="_blank" class="ml-1 font-isf font-isf-weight">Github / </a>
+                <a href="https://git   hub.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19 "  target="_blank" class="ml-1 font-isf font-isf-weight">Github / </a>
                 <a href="https://www.instagram.com/saifmk10/"  target="_blank" class="ml-1 font-isf font-isf-weight">Instagram</a>
             </div>
         </nav>
@@ -46,7 +46,7 @@
             </a>
             <!-- linkedin icon-link -->
             <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/" target="_blank" class="text-black">
-                <img src="resources-for-web/linkedin-logo.svg" alt="LinkedIn" class="w-8 h-8">
+                <img src="/resources-for-web/linkedin-logo.svg" alt="LinkedIn" class="w-8 h-8">
               </a>
             <!-- Github-icon-link -->
             <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19" target="_blank" class="text-black">
@@ -54,7 +54,7 @@
             </a>
             <!-- Instagram-icon-link -->
             <a href="https://www.instagram.com/saifmk10/" target="_blank" class="text-black">
-              <img src="resources-for-web/instagram-logo.svg" alt="Instagram" class="w-8 h-8">
+              <img src="/resources-for-web/instagram-logo.svg" alt="Instagram" class="w-8 h-8">
             </a>        
         </nav>
 
@@ -62,28 +62,33 @@
      
 
         <!-- this bellow divs will hold the content for the intro(profile , about , aimation) -->
-        <div class=" p-[50px] grid grid-rows-[auto , auto , auto]">
+        <div class=" p-[50px] grid grid-rows-[auto , auto , auto] 
+                    sm:pt-[80px]">
 
             <!-- bellow div hold the profile pic also made responsive -->
             <div class="m-[10px] p-[20px] flex justify-center items-center 
                         sm:p-[3px]
                         lg:p-[3px]
                         md:p-[3px]">
-                <img src="resources-for-web/profile-image.svg" alt="profile-image" class="h-[200px] w-auto
+                <img src="/resources-for-web/profile-image.svg" alt="profile-image" class="h-[210px] w-auto
                                                                                             sm:h-[160px] 
                                                                                             lg:h-[210px]">
             </div>
+
+
 
             <!-- the bellow div will hold the name image svg -->
             <div class="flex justify-center items-center p-[10px] 
                         sm:pt-[3px]
                         lg:pt-[3px]
                         md:pt-[3px]">
-                <img src="resources-for-web/Name-svg.svg" alt="Name" class="h-[28px] w-auto 
+                <img src="/resources-for-web/Name-svg.svg" alt="Name" class="h-[28px] w-auto 
                                                                             sm:h-[20px]   
                                                                             md:h-[20px] 
                                                                             lg:h-[25px]">
             </div>
+
+
 
             <!-- the bellow div contains the intro (hey -- i do)-->
             <div class="flex justify-center pt-[15px]
@@ -92,8 +97,8 @@
                         lg:p-[1px] ">
                 <h2 class="flex  items-center gap-4 font-kf font-kf-weight text-[50px]  
                 sm:text-[25px] sm:gap-2  
-                md:text-[30px] md:gap-2
-                lg:text-[35px] lg:gap-2">
+                md:text-[35px] md:gap-2
+                lg:text-[45px] lg:gap-2">
                     HEY<span><img src="./resources-for-web/wave-hand-image.svg" alt="hand waving" class="h-[40px] 
                                                                                                         sm:h-[30px]
                                                                                                         lg:h-[40px]
@@ -101,9 +106,22 @@
                 </h2>
             </div>
 
+
+
             <!-- this is for the typograph of the things i do -->
+            <div id="work-i-do" class=" justify-self-center overflow-hidden">
+                <h3 id="works-text"  class="font-jet motion-preset-typewriter-[20]
+                                            sm:text-[19px] sm:pt-[15px] sm:font-semibold  
+                                            md:text-[30px] md:pt-[] md:font-jet-weight
+                                            lg:text-[40px] lg:font-jet-weight"></h3>
+            </div>
+            
+            <!-- fix the in -->
+            
         </div>
-    </section>  
+    </section> 
+
+    <script src="text-animation.js"></script>
 </body>
 </html>
   
