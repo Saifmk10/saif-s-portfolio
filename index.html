@@ -8,7 +8,7 @@
 </head> 
 <body>
     <!-- this is the parent div for the home page that is holding the elements shown when the website opens up -->
-    <section class="h-home-parent-container  m-4 p-2 rounded-lg  bg-Primary-Color">
+    <section class="lg:h-home-parent-container  m-4 p-2 rounded-lg  bg-Primary-Color sm:h-[665px]">
 
 
         <!-- this nav bar is gonna hold the email section and also the link to other platforms -->
@@ -22,14 +22,14 @@
                 </h3>
                 <button class="bg-buttons  p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight">
                     Copy
-                </button>
+                </button> 
                 <button class="bg-buttons p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight">
                     CV
                 </button>
             </div>
             <div class=" flex items-center justify-self-end">
                 <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/" target="_blank" class="font-isf font-isf-weight">Linkdin / </a>
-                <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19 "  target="_blank" class="ml-1 font-isf font-isf-weight">Github / </a>
+                <a href="https://git   hub.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19 "  target="_blank" class="ml-1 font-isf font-isf-weight">Github / </a>
                 <a href="https://www.instagram.com/saifmk10/"  target="_blank" class="ml-1 font-isf font-isf-weight">Instagram</a>
             </div>
         </nav>
@@ -46,7 +46,7 @@
             </a>
             <!-- linkedin icon-link -->
             <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/" target="_blank" class="text-black">
-                <img src="./resources-for-web/linkedin-logo.svg" alt="LinkedIn" class="w-8 h-8">
+                <img src="/resources-for-web/linkedin-logo.svg" alt="LinkedIn" class="w-8 h-8">
               </a>
             <!-- Github-icon-link -->
             <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19" target="_blank" class="text-black">
@@ -54,7 +54,7 @@
             </a>
             <!-- Instagram-icon-link -->
             <a href="https://www.instagram.com/saifmk10/" target="_blank" class="text-black">
-              <img src="./resources-for-web/instagram-logo.svg" alt="Instagram" class="w-8 h-8">
+              <img src="/resources-for-web/instagram-logo.svg" alt="Instagram" class="w-8 h-8">
             </a>        
         </nav>
 
@@ -62,7 +62,7 @@
      
 
         <!-- this bellow divs will hold the content for the intro(profile , about , aimation) -->
-        <div class=" p-[50px] grid grid-rows-[auto , auto , auto] 
+        <div class=" p-[50px] grid grid-rows-[auto , auto , auto , auto] 
                     sm:pt-[80px]">
 
             <!-- bellow div hold the profile pic also made responsive -->
@@ -70,7 +70,7 @@
                         sm:p-[3px]
                         lg:p-[3px]
                         md:p-[3px]">
-                <img src="./resources-for-web/profile-image.svg" alt="profile-image" class="h-[210px] w-auto
+                <img src="/resources-for-web/profile-image.svg" alt="profile-image" class="h-[210px] w-auto
                                                                                             sm:h-[160px] 
                                                                                             lg:h-[210px]">
             </div>
@@ -82,7 +82,7 @@
                         sm:pt-[3px]
                         lg:pt-[3px]
                         md:pt-[3px]">
-                <img src="./resources-for-web/Name-svg.svg" alt="Name" class="h-[28px] w-auto 
+                <img src="/resources-for-web/Name-svg.svg" alt="Name" class="h-[28px] w-auto 
                                                                             sm:h-[20px]   
                                                                             md:h-[20px] 
                                                                             lg:h-[25px]">
@@ -102,7 +102,8 @@
                     HEY<span><img src="./resources-for-web/wave-hand-image.svg" alt="hand waving" class="h-[40px] 
                                                                                                         sm:h-[30px]
                                                                                                         lg:h-[40px]
-                                                                                                        md:h-[40px]"></span>I DO
+                                                                                                        md:h-[40px]
+                                                                                                        motion-opacity-in-[0%] motion-rotate-in-[15deg] motion-duration-[900ms]/opacity motion-duration-[300ms]/rotate motion-ease-spring-bounciest"></span>I DO
                 </h2>
             </div>
 
@@ -112,16 +113,21 @@
             <div id="work-i-do" class=" justify-self-center overflow-hidden">
                 <h3 id="works-text"  class="font-jet motion-preset-typewriter-[20]
                                             sm:text-[19px] sm:pt-[15px] sm:font-semibold  
-                                            md:text-[30px] md:pt-[] md:font-jet-weight
-                                            lg:text-[40px] lg:font-jet-weight"></h3>
+                                            md:text-[30px] md:pt-[0px] md:font-jet-weight
+                                            lg:text-[40px] lg:pt-[0px] lg:font-jet-weight"></h3>
             </div>
             
-            <!-- fix the in -->
+            <!-- this div will hold the arrow and hope fully the animation in future -->
+            <div class="flex flex-col items-center justify-center rounded-full h-[130px] w-auto
+                        sm:pt-[40px]">
+                <img src="./resources-for-web/down-arrow.svg" alt="arrow-image" class="h-[50px] w-auto">
+                <p class="">Scroll</p>
+            </div>
             
+        
         </div>
-    </section> 
-
+    </section>
+    
     <script src="text-animation.js"></script>
 </body>
 </html>
-  
