@@ -1251,6 +1251,10 @@ video {
   padding: 8px;
 }
 
+.pt-\[10px\]{
+  padding-top: 10px;
+}
+
 .pt-\[15px\]{
   padding-top: 15px;
 }
@@ -1261,10 +1265,6 @@ video {
 
 .pt-\[90px\]{
   padding-top: 90px;
-}
-
-.pt-\[10px\]{
-  padding-top: 10px;
 }
 
 .font-isf{
@@ -1289,10 +1289,6 @@ video {
 
 .text-\[15px\]{
   font-size: 15px;
-}
-
-.text-\[18px\]{
-  font-size: 18px;
 }
 
 .text-\[34px\]{
@@ -1358,6 +1354,14 @@ video {
     display: grid;
   }
 
+  .sm\:h-\[1000px\]{
+    height: 1000px;
+  }
+
+  .sm\:h-\[12px\]{
+    height: 12px;
+  }
+
   .sm\:h-\[160px\]{
     height: 160px;
   }
@@ -1372,34 +1376,6 @@ video {
 
   .sm\:h-\[680px\]{
     height: 680px;
-  }
-
-  .sm\:h-\[800px\]{
-    height: 800px;
-  }
-
-  .sm\:h-\[1000px\]{
-    height: 1000px;
-  }
-
-  .sm\:h-\[14\]{
-    height: 14;
-  }
-
-  .sm\:h-\[14px\]{
-    height: 14px;
-  }
-
-  .sm\:h-\[10px\]{
-    height: 10px;
-  }
-
-  .sm\:h-\[12px\]{
-    height: 12px;
-  }
-
-  .sm\:w-\[200px\]{
-    width: 200px;
   }
 
   .sm\:w-\[230px\]{
@@ -1456,10 +1432,6 @@ video {
 
   .sm\:text-\[25px\]{
     font-size: 25px;
-  }
-
-  .sm\:text-\[30px\]{
-    font-size: 30px;
   }
 
   .sm\:text-\[28px\]{
@@ -1544,6 +1516,10 @@ video {
 
   .lg\:h-home-parent-container{
     height: 750px;
+  }
+
+  .lg\:grid-cols-\[repeat\(auto-fit\2c minmax\(120px\2c 3fr\)\)\]{
+    grid-template-columns: repeat(auto-fit,minmax(120px,3fr));
   }
 
   .lg\:gap-2{
