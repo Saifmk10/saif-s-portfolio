@@ -1058,6 +1058,14 @@ video {
   margin: 10px;
 }
 
+.m-\[5px\]{
+  margin: 5px;
+}
+
+.m-\[1px\]{
+  margin: 1px;
+}
+
 .mb-0{
   margin-bottom: 0px;
 }
@@ -1106,6 +1114,14 @@ video {
   height: 50px;
 }
 
+.h-\[20px\]{
+  height: 20px;
+}
+
+.h-\[30px\]{
+  height: 30px;
+}
+
 .w-8{
   width: 2rem;
 }
@@ -1135,16 +1151,21 @@ video {
   min-width: fit-content;
 }
 
+.translate-y-5{
+  --tw-translate-y: 1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.animate-\[scroll-horizontal_10s_linear_infinite\]{
+  animation: scroll-horizontal 10s linear infinite;
 }
 
-.grid-cols-\[repeat\(auto-fit\2c minmax\(120px\2c 3fr\)\)\]{
-  grid-template-columns: repeat(auto-fit,minmax(120px,3fr));
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1350,6 +1371,14 @@ video {
 }
 
 @media (min-width: 320px){
+  .sm\:m-\[2px\]{
+    margin: 2px;
+  }
+
+  .sm\:m-\[1px\]{
+    margin: 1px;
+  }
+
   .sm\:grid{
     display: grid;
   }
@@ -1378,8 +1407,52 @@ video {
     height: 680px;
   }
 
+  .sm\:h-\[200px\]{
+    height: 200px;
+  }
+
+  .sm\:h-\[600px\]{
+    height: 600px;
+  }
+
+  .sm\:h-\[400px\]{
+    height: 400px;
+  }
+
+  .sm\:h-\[300px\]{
+    height: 300px;
+  }
+
+  .sm\:h-\[280px\]{
+    height: 280px;
+  }
+
+  .sm\:h-\[px\]{
+    height: px;
+  }
+
+  .sm\:h-20{
+    height: 5rem;
+  }
+
+  .sm\:h-10{
+    height: 2.5rem;
+  }
+
+  .sm\:h-\[20xp\]{
+    height: 20xp;
+  }
+
   .sm\:w-\[230px\]{
     width: 230px;
+  }
+
+  .sm\:animate-\[scroll-horizontal_10s_linear_infinite\]{
+    animation: scroll-horizontal 10s linear infinite;
+  }
+
+  .sm\:animate-\[scroll-horizontal_15s_linear_infinite\]{
+    animation: scroll-horizontal 15s linear infinite;
   }
 
   .sm\:grid-cols-2{
@@ -1388,6 +1461,34 @@ video {
 
   .sm\:gap-2{
     gap: 0.5rem;
+  }
+
+  .sm\:gap-1{
+    gap: 0.25rem;
+  }
+
+  .sm\:overflow-hidden{
+    overflow: hidden;
+  }
+
+  .sm\:overflow-scroll{
+    overflow: scroll;
+  }
+
+  .sm\:overflow-x-hidden{
+    overflow-x: hidden;
+  }
+
+  .sm\:overflow-y-hidden{
+    overflow-y: hidden;
+  }
+
+  .sm\:overflow-x-scroll{
+    overflow-x: scroll;
+  }
+
+  .sm\:overflow-y-scroll{
+    overflow-y: scroll;
   }
 
   .sm\:p-\[1px\]{
@@ -1416,6 +1517,14 @@ video {
 
   .sm\:pt-\[80px\]{
     padding-top: 80px;
+  }
+
+  .sm\:pt-\[30px\]{
+    padding-top: 30px;
+  }
+
+  .sm\:pt-\[90px\]{
+    padding-top: 90px;
   }
 
   .sm\:font-kufam{
@@ -1494,6 +1603,10 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:m-\[10px\]{
+    margin: 10px;
+  }
+
   .lg\:grid{
     display: grid;
   }
@@ -1526,6 +1639,18 @@ video {
     gap: 0.5rem;
   }
 
+  .lg\:gap-3{
+    gap: 0.75rem;
+  }
+
+  .lg\:overflow-auto{
+    overflow: auto;
+  }
+
+  .lg\:overflow-visible{
+    overflow: visible;
+  }
+
   .lg\:p-\[100px\]{
     padding: 100px;
   }
@@ -1544,6 +1669,10 @@ video {
 
   .lg\:pt-\[3px\]{
     padding-top: 3px;
+  }
+
+  .lg\:pt-\[20px\]{
+    padding-top: 20px;
   }
 
   .lg\:text-\[18px\]{
