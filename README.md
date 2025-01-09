@@ -21,10 +21,10 @@ A dynamic and responsive portfolio website showcasing my skills, projects, and s
 
 ## Screenshot
 
-![App Screenshot](./resources-for-web/Screenshot.png)
+![App Screenshot](./resources-for-web/new-ss.png)
 
 ## Link
-[Link Text](https://saifmk10.github.io/saif-s-portfolio/)
+[VISIT:](https://saifmk10.github.io/saif-s-portfolio/)
 
 
 
