@@ -1,38 +1,34 @@
-
-const worksArray = ["SOFTWARE DEVELOPMENT", "WEBSITE DEVELOPMENT", "HARDWARE DEVELOPMENT"];
+const worksArray = ["SOFTWARE DEVELOPMENT","WEBSITE DEVELOPMENT", "HARDWARE DEVELOPMENT"];
+let cursorCount = 0;
 const words = document.getElementById("works-text");
 
-// this keeps hold of the {motion-preset-typewriter-[} which is from index.html
-let cursorMovementCount = Array.from(words.classList).find(cls => cls.startsWith("motion-preset-typewriter-["));
-let cursorCount = 0;
+// setinterval to repeatedly call the function
 
+function textanimation(){
+    const intervalId = setInterval(() => {
+        cursorCount++;
+        console.log(cursorCount);
 
-words.addEventListener("animationiteration" , ()=>{
-    cursorCount++;
-    console.log(cursorCount);
+        let index = (cursorCount + 1) % worksArray.length;
 
     
-        for(let i=0; i<3; i++){
-            let index = (cursorCount) % worksArray.length;
+        if (cursorCount % 3 === 1) {  
+            console.log(worksArray[index]);
+            words.innerText = worksArray[index];
+        } else if (cursorCount % 3 === 2) {  
+            console.log(worksArray[index]);
+            words.innerText = worksArray[index];
+        } else if (cursorCount % 3 === 0) {  
+            console.log(worksArray[index]);
+            words.innerText = worksArray[index];
+        }
+
     
-            if(cursorCount === 1){
-                console.log(worksArray[index]);
-                words.innerText = worksArray[index];
-            }
-            else if(cursorCount === 8){
-                console.log(worksArray[index]);
-                words.innerText = worksArray[index];
-                // const newCursorMovementCount = cursorMovementCount.replace(/\d+/, "15");
-                
-            }
-            else if(cursorCount === 16){
-                console.log(worksArray[index]);
-                words.innerText = worksArray[index];
-                // const newCursorMovementCount = cursorMovementCount.replace(/\d+/, "20");
-                // words.classList.remove(cursorMovementCount);
-                // words.classList.add(newCursorMovementCount);
-            }
-        }   
-        
-        // try recursion
-});
+        if (cursorCount === Infinity) {
+            clearInterval(intervalId);
+        }
+
+    }, 2000); //timing set to 2 seconds
+}
+
+textanimation(); //function call for executing animation
