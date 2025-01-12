@@ -1,11 +1,13 @@
-const worksArray = ["SOFTWARE DEVELOPMENT","WEBSITE DEVELOPMENT", "HARDWARE DEVELOPMENT"];
+const worksArray = ["WEBSITE DEVELOPMENT" ,"HARDWARE DEVELOPMENT", "SOFTWARE DEVELOPMENT"];
 let cursorCount = 0;
 const words = document.getElementById("works-text");
 
 // setinterval to repeatedly call the function
 
+words.innerText = worksArray[cursorCount];
+
 function textanimation(){
-    const intervalId = setInterval(() => {
+   
         cursorCount++;
         console.log(cursorCount);
 
@@ -27,8 +29,8 @@ function textanimation(){
         if (cursorCount === Infinity) {
             clearInterval(intervalId);
         }
-
-    }, 2000); //timing set to 2 seconds
 }
 
 textanimation(); //function call for executing animation
+
+setInterval(textanimation , 4700);
