@@ -791,6 +791,22 @@ video {
   width: auto;
 }
 
+.w-\[80px\]{
+  width: 80px;
+}
+
+.w-\[200px\]{
+  width: 200px;
+}
+
+.w-\[100px\]{
+  width: 100px;
+}
+
+.w-\[130px\]{
+  width: 130px;
+}
+
 .min-w-fit{
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -814,6 +830,22 @@ video {
 
 .animate-bounce{
   animation: bounce 1s infinite;
+}
+
+@keyframes reveal{
+  0%{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-reveal{
+  animation: reveal linear both;
 }
 
 .grid-cols-2{
@@ -924,8 +956,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\#aeb5b3\]{
+  --tw-gradient-from: #aeb5b3 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(174 181 179 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-\[\#552189\]{
   --tw-gradient-to: #552189 var(--tw-gradient-to-position);
+}
+
+.to-\[\#76898a\]{
+  --tw-gradient-to: #76898a var(--tw-gradient-to-position);
 }
 
 .p-2{
@@ -1075,16 +1117,16 @@ video {
 
 /* animation utilities for reaveal animation */
 
-.animationis-reveal {
+.animate-reveal {
   animation: reveal linear both;
 }
 
 .timeline-view {
-  display: block;
+  animation-timeline: view(block);
 }
 
 .range-cover {
-  transform-origin: 30% 40%;
+  animation-range: cover 30% cover 40%;
 }
 
 /* projects scaling animation */
@@ -1107,9 +1149,19 @@ video {
   filter: none;
 }
 
+/* filter for unfinished projects */
+
+.blur-card-unfinished-project{
+  filter: blur(5px);
+}
+
 @media (min-width: 320px){
   .sm\:m-\[1px\]{
     margin: 1px;
+  }
+
+  .sm\:mt-\[20px\]{
+    margin-top: 20px;
   }
 
   .sm\:grid{
@@ -1176,6 +1228,10 @@ video {
     gap: 0.5rem;
   }
 
+  .sm\:gap-\[100px\]{
+    gap: 100px;
+  }
+
   .sm\:overflow-x-hidden{
     overflow-x: hidden;
   }
@@ -1226,6 +1282,10 @@ video {
 
   .sm\:pt-\[80px\]{
     padding-top: 80px;
+  }
+
+  .sm\:pt-\[20px\]{
+    padding-top: 20px;
   }
 
   .sm\:font-kufam{
