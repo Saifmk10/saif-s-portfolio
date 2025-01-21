@@ -18,16 +18,17 @@
   }
 
   /* animation utilities for reaveal animation */
-  .animationis-reveal {
+  .animate-reveal {
     animation: reveal linear both;
   }
   .timeline-view {
-    display: block;
+    animation-timeline: view(block);
   }
   .range-cover {
-    transform-origin: 30% 40%;
+    animation-range: cover 30% cover 40%;
   }
 
+  
   /* projects scaling animation */ 
 .image-scaling {
   transform: scale(1) translateY(0);
@@ -45,7 +46,15 @@
 }
 
 
+/* filter for unfinished projects */
+.blur-card-unfinished-project{
+  filter: blur(5px);
 }
+
+}
+
+
+
 
 /* keyframe for the reveal animation */
 @keyframes reveal {
