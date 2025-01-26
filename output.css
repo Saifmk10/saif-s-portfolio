@@ -1766,6 +1766,10 @@ video {
     padding-top: 80px;
   }
 
+  .sm\:pr-\[30px\]{
+    padding-right: 30px;
+  }
+
   .sm\:font-kufam{
     font-family: "Kufam", serif;
   }
@@ -1842,6 +1846,10 @@ video {
 
   .md\:pt-\[3px\]{
     padding-top: 3px;
+  }
+
+  .md\:pr-\[50px\]{
+    padding-right: 50px;
   }
 
   .md\:text-\[18px\]{
@@ -2020,6 +2028,14 @@ video {
 
   .lg\:pt-\[3px\]{
     padding-top: 3px;
+  }
+
+  .lg\:pr-\[80px\]{
+    padding-right: 80px;
+  }
+
+  .lg\:pr-\[70px\]{
+    padding-right: 70px;
   }
 
   .lg\:text-\[18px\]{
