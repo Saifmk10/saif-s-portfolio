@@ -18,10 +18,10 @@
             <!-- the bellow code is mainly for large screen (laptops) -->
             <!-- this contains the hidden class so that if screen smaller then nav wont be displayed -->
             <div class="bg-Email-section w-[400px] h-[50px] rounded-[80px] flex items-center justify-evenly">
-                <h3 class="p-[10px] font-isf font-isf-weight text-[15px]">
+                <h3 class="p-[10px] font-isf font-isf-weight text-[15px]" id="email_to_copy">
                     Saifmkpvt@gmail.com
                 </h3>
-                <button class="bg-buttons  p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight">
+                <button class="bg-buttons  p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight" onclick="copyToClickBoard()" id="copy_button">
                     Copy
                 </button> 
                 <button class="bg-buttons p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight">
@@ -407,26 +407,30 @@
             md:text-[18px] 
             lg:text-[18px]">My passion lies in capturing moments and telling stories through photography and animation. I aim to bring creativity to life, blending visual art and motion to create impactful, engaging experiences.</p>
 
-            <div class="flex justify-center">
+            <!-- this div is used for placing child div in position -->
+            <div class="flex justify-center sm:flex sm:justify-center">
             <!-- this div will hold the image for the passsion section -->
-            <div class="grid pt-16 grid-cols-[200px_200px_200px_200px] grid-rows-[200px_400px_200px] gap-2 sm:h-[200px] sm:w-auto">
-                <!-- Image 1 (Takes Full Width of First Row) -->
-                <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[200px] w-[400px] rounded-[20px] col-span-2">
+                <div class="lg:grid pt-16 grid-cols-[200px_200px_200px_200px] grid-rows-[200px_400px_200px] gap-2
+                ">
+                    <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="lg:h-[200px] w-[400px] rounded-[20px] col-span-2 
+                                                                                            sm:h-[150px] w-auto">
+    
+                    <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-auto rounded-[20px] col-start-1">
                 
-                <!-- Image 2 (Placed in Row 2, Column 1) -->
-                <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-auto rounded-[20px] col-start-1">
-                
-                <!-- Image 3 (Placed in Row 2, Column 2) -->
-                <img src="./resources-for-web/image 3.jpg" alt="flower close up" class="h-[400px] w-[200px] rounded-[20px] ">
+                    <img src="./resources-for-web/image 3.jpg" alt="flower close up" class="h-[400px] w-[200px] rounded-[20px] ">
 
-                <img src="./resources-for-web/image 1.jpg" alt="the cat" class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-3">
+                    <img src="./resources-for-web/image 1.jpg" alt="the cat" class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-3">
                 
-                <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-4 ">
+                    <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-4 ">
 
-                <!-- div holding passion quotes -->
-                <div class="bg-black h-[200px] w-[400px] rounded-[20px] row-start-3"></div>
-            </div>
-            </div>
+                    <!-- div holding passion quotes -->
+                    <div class="bg-black h-[200px] w-[400px] rounded-[20px] row-start-2 col-start-3 self-end"></div>
+                </div>
+
+
+                <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+
+               
 
              
          </div>

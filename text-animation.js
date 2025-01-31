@@ -200,3 +200,13 @@ function loadingAnimationCardTwo(){
 
 loadingAnimationCardTwo();
 setInterval(loadingAnimationCardTwo , 7000);
+
+
+// function for copying the email id from the header.
+let copyButton = document.getElementById("copy_button");
+
+function copyToClickBoard(){
+    navigator.clipboard.writeText("saifmkpvt@gmail.com");
+    console.log(copyButton);
+    copyButton.innerText = "Copied";
+}
