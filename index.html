@@ -240,7 +240,7 @@
     </section>
 
     <!-- this section will hold the projects detail -->
-    <section class="bg-Primary-Color bottom-10 m-4 mb-0 rounded-lg h-[1500px]">
+    <section class="bg-Primary-Color bottom-10 m-4 mb-0 rounded-lg lg md:h-[1500px] sm:h-[3600px]">
         
         <!-- parent div responsible for holding all the content within this section -->
         <div class="p-[100px]
@@ -339,8 +339,6 @@
 
             </div> <!-- end of the third project card -->
 
-
-
             <!-- third project card (in progresss) -->
             <div class="relative bg-[#B5B1B1] rounded-[20px] overflow-hidden
                         lg:h-[270px] lg:w-[360px] 
@@ -386,9 +384,8 @@
         </div> <!-- end of the parent container that is holding the project cards --> 
         
 
-
-
-
+        <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+        
         
         <!-- this new div acts as a section holding the passion -->
          <div class="p-[100px]
@@ -407,19 +404,21 @@
             md:text-[18px] 
             lg:text-[18px]">My passion lies in capturing moments and telling stories through photography and animation. I aim to bring creativity to life, blending visual art and motion to create impactful, engaging experiences.</p>
 
+            <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+                <!-- this will hold a diff layout for the larg screens -->
+            <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+
             <!-- this div is used for placing child div in position -->
-            <div class="flex justify-center sm:flex sm:justify-center">
+            <div class="flex justify-center">
             <!-- this div will hold the image for the passsion section -->
-                <div class="lg:grid pt-16 grid-cols-[200px_200px_200px_200px] grid-rows-[200px_400px_200px] gap-2
-                ">
-                    <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="lg:h-[200px] w-[400px] rounded-[20px] col-span-2 
-                                                                                            sm:h-[150px] w-auto">
+                <div class="lg md:grid pt-16 grid-cols-[200px_200px_200px_200px] grid-rows-[200px_400px_200px] gap-2 sm:hidden">
+                    <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[200px] w-[400px] rounded-[20px] col-span-2 ">
     
-                    <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-auto rounded-[20px] col-start-1">
+                    <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-auto rounded-[20px] col-start-1 ">
                 
                     <img src="./resources-for-web/image 3.jpg" alt="flower close up" class="h-[400px] w-[200px] rounded-[20px] ">
 
-                    <img src="./resources-for-web/image 1.jpg" alt="the cat" class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-3">
+                    <img src="./resources-for-web/image 1.jpg" alt="the cat" class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-3 ">
                 
                     <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-4 ">
 
@@ -427,9 +426,23 @@
                     <div class="bg-black h-[200px] w-[400px] rounded-[20px] row-start-2 col-start-3 self-end"></div>
                 </div>
 
-
                 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+                    <!-- the bellow code is the same one for the passion images but with a different layout for the sm view port -->
+                <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+                <div class="sm:flex flex-col justify-center items-center m-10 gap-2 lg md:hidden">
+                    <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[250px] w-auto rounded-[20px] col-span-2">
+    
+                    <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-auto rounded-[20px] col-start-1 ">
+                
+                    <img src="./resources-for-web/image 3.jpg" alt="flower close up" class="h-[400px] w-auto rounded-[20px] ">
 
+                    <img src="./resources-for-web/image 1.jpg" alt="the cat" class="h-[400px] w-auto rounded-[20px] row-start-1 col-start-3 ">
+                
+                    <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-auto rounded-[20px] row-start-1 col-start-4 ">
+
+                    <!-- div holding passion quotes -->
+                    <div class="bg-black h-[200px] w-[320px] rounded-[20px] "></div>
+                </div>
                
 
              
