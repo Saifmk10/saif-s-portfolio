@@ -51,7 +51,30 @@
   filter: blur(5px);
 }
 
+/* animation section for the underline animation on the socials */
+.on-hover-underline {
+  text-decoration: none; 
+  position:relative;
+  display: inline-block;
 }
+.on-hover-underline::before{
+  content: "";
+  position: absolute;
+  left: 0; 
+  bottom: 0; /* used to make the line come bellow */
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+.on-hover-underline:hover::before{
+  width: 100%;
+}
+
+
+
+ 
+}/* end of utility class */
 
 
 
