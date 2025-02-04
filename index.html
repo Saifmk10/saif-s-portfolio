@@ -261,10 +261,19 @@
             lg:text-[18px]">Projects are where ideas take shape, creativity meets code, and innovation transforms into reality. Each project is a step forward, a challenge conquered, and a story of passion-driven progress</p>
         </div>
 
+        <!-- popup section js connected text-animation.js 215 -->
+        <div class="w-[800px] h-[800px] overflow-hidden bg-white p-4 rounded-lg align-middle hidden" id="trig">
+            <div class="relative h-[800px] w-[800px] ">
+                <img src="./resources-for-web/cancel-button-popup-page.svg" alt="cancel" class=" fixed top-2 right-60 h-[50px] w-auto border-2 border-red-600" onclick="popupClose()">
+                <iframe src="./case_study.html" frameborder="0" class="w-full h-full overflow-y-hidden p-0 m-0 border-none"></iframe>
+            </div>
+        </div>
+
         <!-- div will act as a parent container and will hold the projects  -->
         <div class="lg:flex lg:gap-[100px] lg:pl-[100px] 
                     sm:flex-row  sm:gap-2 sm:p-[20px] sm:pt-0">
             
+                    
 
             <!-- -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=================================================== -->
             <!-- content about investo will be added here (responsive) -->
@@ -272,12 +281,14 @@
                         lg:h-[270px] lg:w-[360px] 
                         sm:w-auto sm:h-[250px] sm:mt-[20px]
                         md:h-[270px] md:w-[360px]
-                        images-parent">  
+                        images-parent" id="blur-on-click">  
+
+                        
 
                 <div class="flex justify-center bg-gradient-to-r from-[#673abf] to-[#552189] rounded-t-[20px]
                 lg:h-[160px]
                 sm:h-[150px] sm:rounded-tr-[20px] sm:rounded-tl-[20px]
-                ">
+                " onclick="popupOpen()">
                     <!-- custom class has been used for scaling animation -->
                     <img src="./resources-for-web/investo-cover-new.png" alt="project-cover" class="h-[160px] w-auto image-scaling">
                 </div>
@@ -295,7 +306,6 @@
                     </div>
                 </div>
             </div> <!-- end of the main project card -->
-
 
 
 
@@ -443,7 +453,7 @@
                     <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[223px] rounded-[20px] row-start-1 col-start-4 ">
 
                     <!-- div holding passion quotes -->
-                    <div class="bg-black h-[200px] w-[260px] rounded-[20px] "></div>
+                    <div class="bg-red-500 h-[200px] w-[260px] rounded-[20px] "></div>
                 </div>
                
 
@@ -454,5 +464,7 @@
     </section>
 
     <script src="text-animation.js"></script>
+    <script src="./connection.js">
+    </script>
 </body>
-</html>
+</html> 
