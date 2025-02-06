@@ -210,3 +210,38 @@ function copyToClickBoard(){
     console.log(copyButton);
     copyButton.innerText = "Copied";
 }
+
+// rigger for the project section (will open up the projects detail)
+function popupOpen(){
+    var value = document.getElementById("trig");
+    var bgBlur = document.getElementById("blur-on-click");
+    value.style.display = "flex";
+    value.style.position = "fixed"; // Keeps it in place
+    value.style.top = "0"; 
+    value.style.left = "375px"; 
+    value.style.width = "800px"; 
+    value.style.height = "800px"; 
+    value.style.justifyContent = "center"; 
+    value.style.alignItems = "center"; 
+    value.style.zIndex = "9999";  
+
+    bgBlur.style.filter = "blur(10px)";
+}
+function popupClose(){
+    var value = document.getElementById("trig");
+    var bgBlur = document.getElementById("blur-on-click");
+
+    value.style.display = "none";
+    bgBlur.style.filter = "none";
+}
+
+document.addEventListener("keydown" , function(event){
+
+    var value = document.getElementById("trig");
+    var bgBlur = document.getElementById("blur-on-click");
+
+    if(event.key === "Escape"){
+        value.style.display = "none";
+        bgBlur.style.filter = "none";
+    }
+});
