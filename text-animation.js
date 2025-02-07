@@ -211,7 +211,8 @@ function copyToClickBoard(){
     copyButton.innerText = "Copied";
 }
 
-// rigger for the project section (will open up the projects detail)
+
+// trigger for the project section (will open up the projects detail)
 function popupOpen(){
     var value = document.getElementById("trig");
     var bgBlur = document.getElementById("blur-on-click");
@@ -234,7 +235,6 @@ function popupClose(){
     value.style.display = "none";
     bgBlur.style.filter = "none";
 }
-
 document.addEventListener("keydown" , function(event){
 
     var value = document.getElementById("trig");
@@ -245,3 +245,12 @@ document.addEventListener("keydown" , function(event){
         bgBlur.style.filter = "none";
     }
 });
+function handleClickOnScreenSize(){ //this will check the screen size and do the redirection
+    if (window.innerWidth < 640) { 
+        window.location.href = "case_study.html"; 
+    } else {
+        popupOpen(); 
+    }
+}
+
+
