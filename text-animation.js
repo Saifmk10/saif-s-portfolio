@@ -227,6 +227,8 @@ function popupOpen(){
     value.style.zIndex = "9999";  
 
     bgBlur.style.filter = "blur(10px)";
+
+    document.body.style.overflow = "hidden";
 }
 function popupClose(){
     var value = document.getElementById("trig");
@@ -234,6 +236,8 @@ function popupClose(){
 
     value.style.display = "none";
     bgBlur.style.filter = "none";
+
+    document.body.style.overflow = "auto";
 }
 document.addEventListener("keydown" , function(event){
 
