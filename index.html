@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="output.css">
 </head> 
 <body>
+
+    
     <!-- this is the parent section for the home page that is holding the elements shown when the website opens up -->
     <section class="lg:h-home-parent-container  m-4 p-2 rounded-lg  bg-Primary-Color sm:h-[680px]">
 
@@ -256,7 +258,7 @@
             </div>
 
             <p class="font-kufam pt-[20px]
-            sm:text-[15px] 
+            sm:text-[15px]
             md:text-[18px] 
             lg:text-[18px]">Projects are where ideas take shape, creativity meets code, and innovation transforms into reality. Each project is a step forward, a challenge conquered, and a story of passion-driven progress</p>
         </div>
@@ -354,7 +356,7 @@
 
 
             <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-             
+
 
             <!-- third project card (in progresss) -->
             <div class="relative bg-[#B5B1B1] rounded-[20px] overflow-hidden
@@ -426,7 +428,7 @@
             <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
 
             <!-- this div is used for placing child div in position -->
-            <div class="flex justify-center">
+            <div class="flex justify-center"> 
             <!-- this div will hold the image for the passsion section -->
                 <div class="lg md:grid pt-16 grid-cols-[200px_200px_200px_200px] grid-rows-[200px_400px_200px] gap-2 sm:hidden">
                     <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[200px] w-[400px] rounded-[20px] col-span-2 ">
@@ -440,7 +442,9 @@
                     <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-4 ">
 
                     <!-- div holding passion quotes -->
-                    <div class="bg-black h-[200px] w-[400px] rounded-[20px] row-start-2 col-start-3 self-end"></div>
+                    <div class="bg-black h-[200px] w-[400px] rounded-[20px] row-start-2 col-start-3 self-end">
+                         
+                    </div>
                 </div>
 
                 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
@@ -458,11 +462,9 @@
                     <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[223px] rounded-[20px] row-start-1 col-start-4 ">
 
                     <!-- div holding passion quotes -->
-                    <div class="bg-red-500 h-[200px] w-[260px] rounded-[20px] "></div>
+                    <div class="bg-black h-[200px] w-[260px] rounded-[20px] "></div>
                 </div>
                
-
-             
          </div>
 
          
@@ -471,5 +473,13 @@
     <script src="text-animation.js"></script>
     <script src="./connection.js">
     </script>
+
+<!-- svg made foe the filter (grainy-filter) -->
+<svg>
+    <filter id="grainyTexture"> 
+        <feTurbulence type = "turbulence" baseFrequency = "0.60"/>
+    </filter>       
+</svg>
+    
 </body>
 </html> 
