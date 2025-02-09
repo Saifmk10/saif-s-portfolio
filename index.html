@@ -264,7 +264,7 @@
         <!-- popup section js connected text-animation.js 215 -->
         <div class="w-[800px] h-[800px] overflow-hidden bg-white p-4 rounded-lg align-middle hidden" id="trig">
             <div class="relative h-[800px] w-[800px] ">
-                <img src="./resources-for-web/cancel-button-popup-page.svg" alt="cancel" class=" fixed top-2 right-60 h-[50px] w-auto " onclick="popupClose()">
+                <img src="./resources-for-web/cancel-button-popup-page.svg" alt="cancel" class=" fixed top-2 right-[400px] h-[50px] w-auto " onclick="popupClose()">
                 <iframe src="./case_study.html" frameborder="0" class="w-full h-full overflow-y-hidden p-0 m-0 border-none" allowfullscreen></iframe>
             </div>
         </div>
@@ -281,14 +281,14 @@
                         lg:h-[270px] lg:w-[360px] 
                         sm:w-auto sm:h-[250px] sm:mt-[20px]
                         md:h-[270px] md:w-[360px]
-                        images-parent" id="blur-on-click">  
+                        images-parent" id="blur-on-click" onclick="handleClickOnScreenSize()">  <!-- handleClickOnScreenSize() this function will check the screen size and open the popup as required -->
 
                         
 
                 <div class="flex justify-center bg-gradient-to-r from-[#673abf] to-[#552189] rounded-t-[20px]
                 lg:h-[160px]
                 sm:h-[150px] sm:rounded-tr-[20px] sm:rounded-tl-[20px]
-                " onclick="handleClickOnScreenSize()">
+                "> 
                     <!-- custom class has been used for scaling animation -->
                     <img src="./resources-for-web/investo-cover-new.png" alt="project-cover" class="h-[160px] w-auto image-scaling">
                 </div>
@@ -308,6 +308,7 @@
             </div> <!-- end of the main project card -->
 
 
+            <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
             <!-- second project card (in progresss) -->
             <div class="relative bg-[#B5B1B1] rounded-[20px] overflow-hidden
@@ -350,6 +351,10 @@
                 </div>
 
             </div> <!-- end of the third project card -->
+
+
+            <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+             
 
             <!-- third project card (in progresss) -->
             <div class="relative bg-[#B5B1B1] rounded-[20px] overflow-hidden
