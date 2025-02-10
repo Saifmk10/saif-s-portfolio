@@ -28,6 +28,24 @@
 
 /* end of utility class */
 
+@keyframes phoneAnimation {
+  from{
+    transform: scaleZ(1);
+  }
+
+  50%{
+    transform: scale(0.9);
+  }
+
+  25%{
+    transform: scale(0.8);
+  }
+
+  to{
+    transform: scale(0.0);
+  }
+}
+
 /* keyframe for the reveal animation */
 
 @keyframes reveal {
@@ -1326,6 +1344,11 @@ video {
 
 .on-hover-underline:hover::before{
   width: 100%;
+}
+
+.mobileAnimation{
+  animation: phoneAnimation 4s;
+  animation-iteration-count: infinite;
 }
 
 @media (min-width: 320px){
