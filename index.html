@@ -244,7 +244,7 @@
     </section>
 
     <!-- this section will hold the projects detail -->
-    <section class="bg-Primary-Color bottom-10 m-4 mb-0 rounded-lg lg md:h-[1500px] sm:h-[3600px]">
+    <section class="bg-Primary-Color bottom-10 m-4 mb-0 rounded-lg lg:h-[1500px] md:h-[1900px] sm:h-[3600px] ">
         
         <!-- parent div responsible for holding all the content within this section -->
         <div class="p-[100px]
@@ -407,7 +407,7 @@
         
         
         <!-- this new div acts as a section holding the passion -->
-         <div class="p-[100px] pt-[30px]
+        <div class="p-[100px] pt-[30px]
                     sm:p-[25px] sm:pt-[40px]
                     md:p-[40px]
                     lg:pl-[100px]">
@@ -417,20 +417,20 @@
                             ">PASSION</h4>
                 <div class="absolute bg-[#FEF200] h-[16px] lg:w-[230px] md:w-[230px] sm:w-[180px] bottom-1 left-0 z-0 "></div>
             </div>
-
+        
             <p class="font-kufam pt-[20px]
             sm:text-[15px] 
             md:text-[18px] 
             lg:text-[18px]">My passion lies in capturing moments and telling stories through photography and animation. I aim to bring creativity to life, blending visual art and motion to create impactful, engaging experiences.</p>
-
+        </div>
             <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
                 <!-- this will hold a diff layout for the larg screens -->
             <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
 
             <!-- this div is used for placing child div in position -->
-            <div class="flex justify-center"> 
+            <div class="flex justify-center "> 
             <!-- this div will hold the image for the passsion section -->
-                <div class="lg md:grid pt-16 grid-cols-[200px_200px_200px_200px] grid-rows-[200px_400px_200px] gap-2 sm:hidden">
+                <div class="lg:grid pt-16 grid-cols-[200px_200px_200px_200px] grid-rows-[200px_400px_200px] gap-2 sm:hidden md:hidden">
                     <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[200px] w-[400px] rounded-[20px] col-span-2 ">
     
                     <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-auto rounded-[20px] col-start-1 ">
@@ -450,16 +450,33 @@
                 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
                     <!-- the bellow code is the same one for the passion images but with a different layout for the sm view port -->
                 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
-                <div class="sm:flex flex-col justify-center items-center m-10 gap-2 lg md:hidden">
-                    <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[250px] w-[260px] rounded-[20px] col-span-2">
+                <div class="sm:flex flex-col justify-center items-center m-10 gap-2 lg md:hidden lg:hidden">
+                    <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[250px] w-[260px] rounded-[20px] col-span-2" loading="lazy">
     
-                    <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-[220px] rounded-[20px] col-start-1 ">
+                    <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-[220px] rounded-[20px] col-start-1 " loading="lazy">
                 
-                    <img src="./resources-for-web/image 3.jpg" alt="flower close up" class="h-[400px] w-auto rounded-[20px] ">
+                    <img src="./resources-for-web/image 3.jpg" alt="flower close up" class="h-[400px] w-auto rounded-[20px] " loading="lazy">
 
-                    <img src="./resources-for-web/image 1.jpg" alt="the cat" class="h-[400px] w-auto rounded-[20px] row-start-1 col-start-3 ">
+                    <img src="./resources-for-web/image 1.jpg" alt="the cat" class="h-[400px] w-auto rounded-[20px] row-start-1 col-start-3 " loading="lazy">
                 
-                    <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[223px] rounded-[20px] row-start-1 col-start-4 ">
+                    <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[223px] rounded-[20px] row-start-1 col-start-4 " loading="lazy"
+                    >
+
+                    <!-- div holding passion quotes -->
+                    <div class="bg-black h-[200px] w-[260px] rounded-[20px] "></div>
+                </div>
+
+                <div class="md:flex flex-row justify-center items-center m-10 gap-2 lg:hidden sm:hidden overflow-scroll overflow-y-hidden">
+                    <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[250px] w-[220px] rounded-[20px] col-span-2" loading="lazy">
+    
+                    <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-[220px] rounded-[20px] col-start-1 " loading="lazy">
+                
+                    <img src="./resources-for-web/image 3.jpg" alt="flower close up" class="h-[400px] w-auto rounded-[20px] " loading="lazy">
+
+                    <img src="./resources-for-web/image 1.jpg" alt="the cat" class="h-[400px] w-auto rounded-[20px] row-start-1 col-start-3 " loading="lazy">
+                
+                    <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[223px] rounded-[20px] row-start-1 col-start-4 " loading="lazy"
+                    >
 
                     <!-- div holding passion quotes -->
                     <div class="bg-black h-[200px] w-[260px] rounded-[20px] "></div>
@@ -468,6 +485,38 @@
          </div>
 
          
+    </section>
+
+
+    <!-- this is section that will hold the testimonials of clients -->
+    <section id="about-section" class="lg:h-home-parent-container  m-4 mb-0 rounded-lg  bg-Primary-Color sm:h-[1000px] overflow-hidden">
+        <div class="p-[100px] pt-[30px]
+                    sm:p-[25px] sm:pt-[40px]
+                    md:p-[40px]
+                    lg:pl-[100px]">
+            <!-- this div contains passion heading -->
+            <div class="relative pt-[30px]">
+                <h4 class="font-kOne relative z-10 lg:text-[36px] sm:text-[23px] md:text-[36px]
+                            ">TESTIMONIALS</h4>
+                <div class="absolute bg-[#FEF200] h-[16px] lg:w-[350px] md:w-[230px] sm:w-[225px] bottom-1 left-0 z-0 "></div>
+            </div>
+        
+            <p class="font-kufam pt-[20px]
+            sm:text-[15px] 
+            md:text-[18px] 
+            lg:text-[18px]">
+            Don't just take my word for it—see what my clients and collaborators have to say! Here are some testimonials from those I've worked with, sharing their experiences and insights.</p>
+        </div>
+
+        <!-- this will act as a parent div holding the testimonial -->
+        <div class="flex flex-row justify-center">
+            <div class="relative pt-[30px] bg-[#B5B1B1] h-[300px] w-[350px] rounded-[20px] sm:h-[300px] sm:m-[30px] ">
+                <p>Impressed by the work done , looking forward to make more projects</p>
+                <div class="absolute bg-[#D9D9D9] h-[55px] w-[200px] rounded-[20px] bottom-[-5px] lg:left-[170px] z-0 sm:left-[80px]"></div>
+                <div class="absolute bg-black h-[47px] lg:w-[176px] rounded-[20px] bottom-[-1px] lg:left-[175px] z-0 sm:left-[85px] sm:w-[145px] md:left-[85px] md:w-[145px]"></div>
+                <!-- D9D9D9 -->
+            </div>
+        </div>
     </section>
 
     <script src="text-animation.js"></script>
