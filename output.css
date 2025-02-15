@@ -95,20 +95,20 @@
 
 /* filter for the grainy texture  */
 
-body::before {
+/* body::before {
   content: '';
-  position: fixed;
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; 
   background: #000000;
   filter: url(#grainyTexture);
   opacity: 30%;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: multiply;
-}
+  pointer-events: none; 
+  z-index: 9999; 
+  mix-blend-mode: multiply; 
+} */
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -677,6 +677,12 @@ video {
 @media (min-width: 375px){
   .container{
     max-width: 375px;
+  }
+}
+
+@media (min-width: 403px){
+  .container{
+    max-width: 403px;
   }
 }
 
@@ -1402,20 +1408,16 @@ video {
     left: 67px;
   }
 
-  .sm\:left-\[89px\]{
-    left: 89px;
-  }
-
-  .sm\:left-\[100px\]{
-    left: 100px;
+  .sm\:left-\[80px\]{
+    left: 80px;
   }
 
   .sm\:left-\[85px\]{
     left: 85px;
   }
 
-  .sm\:left-\[80px\]{
-    left: 80px;
+  .sm\:left-\[89px\]{
+    left: 89px;
   }
 
   .sm\:m-\[1px\]{
@@ -1494,6 +1496,14 @@ video {
     height: 680px;
   }
 
+  .sm\:w-\[145px\]{
+    width: 145px;
+  }
+
+  .sm\:w-\[160px\]{
+    width: 160px;
+  }
+
   .sm\:w-\[180px\]{
     width: 180px;
   }
@@ -1508,14 +1518,6 @@ video {
 
   .sm\:w-auto{
     width: auto;
-  }
-
-  .sm\:w-\[145px\]{
-    width: 145px;
-  }
-
-  .sm\:w-\[160px\]{
-    width: 160px;
   }
 
   .sm\:grid-cols-2{
@@ -1633,6 +1635,24 @@ video {
   }
 }
 
+@media (min-width: 403px){
+  .me\:left-\[120px\]{
+    left: 120px;
+  }
+
+  .me\:left-\[125px\]{
+    left: 125px;
+  }
+
+  .me\:w-\[158px\]{
+    width: 158px;
+  }
+
+  .me\:w-\[200px\]{
+    width: 200px;
+  }
+}
+
 @media (min-width: 425px){
   .ph\:left-\[180px\]{
     left: 180px;
@@ -1652,26 +1672,6 @@ video {
 }
 
 @media (min-width: 640px){
-  .md\:left-\[85px\]{
-    left: 85px;
-  }
-
-  .md\:left-\[100px\]{
-    left: 100px;
-  }
-
-  .md\:left-\[200px\]{
-    left: 200px;
-  }
-
-  .md\:left-\[180px\]{
-    left: 180px;
-  }
-
-  .md\:left-\[175px\]{
-    left: 175px;
-  }
-
   .md\:left-\[185px\]{
     left: 185px;
   }
@@ -1704,8 +1704,8 @@ video {
     height: 40px;
   }
 
-  .md\:w-\[145px\]{
-    width: 145px;
+  .md\:w-\[165px\]{
+    width: 165px;
   }
 
   .md\:w-\[230px\]{
@@ -1714,14 +1714,6 @@ video {
 
   .md\:w-\[360px\]{
     width: 360px;
-  }
-
-  .md\:w-\[160px\]{
-    width: 160px;
-  }
-
-  .md\:w-\[165px\]{
-    width: 165px;
   }
 
   .md\:gap-2{
