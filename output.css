@@ -36,6 +36,18 @@
 
 /* end of utility class */
 
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
 @keyframes phoneAnimation {
   0% {
     transform: scale(1);
@@ -1449,22 +1461,6 @@ video {
   animation: bounce 1s infinite;
 }
 
-@keyframes reveal{
-  0%{
-    opacity: 0;
-    transform: translateY(10px);
-  }
-
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-reveal{
-  animation: reveal linear both;
-}
-
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1860,6 +1856,10 @@ video {
   --motion-text-color-perceptual-duration-multiplier: 1.66;
 }
 
+body{
+  scroll-behavior: smooth;
+}
+
 /* animation utilities for typing animation */
 
 .typing-container {
@@ -1873,20 +1873,6 @@ video {
   display: inline-block;
   width: 0;
   animation: typing 4.7s steps(30) forwards infinite, blink 0.6s step-end infinite;
-}
-
-/* animation utilities for reaveal animation */
-
-.animate-reveal {
-  animation: reveal linear both;
-}
-
-.timeline-view {
-  animation-timeline: view(block);
-}
-
-.range-cover {
-  animation-range: cover 30% cover 40%;
 }
 
 /* projects scaling animation */
@@ -1948,6 +1934,8 @@ video {
   animation-delay: 4s;
   /* Starts after the first animation completes */
 }
+
+/* reveal animation */
 
 .placeholder\:font-abel::-moz-placeholder{
   font-family: "Abel", serif;
