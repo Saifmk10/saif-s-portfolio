@@ -79,8 +79,7 @@
 
         <!-- this bellow divs will hold the content for the intro(profile , about , aimation) -->
         <div class=" p-[50px] grid grid-rows-[auto , auto , auto , auto] 
-                    sm:pt-[80px]">
-
+                    sm:pt-[80px] relative">
             <!-- bellow div hold the profile pic also made responsive -->
             <div class="m-[10px] p-[20px] flex justify-center items-center 
                         sm:p-[3px]
@@ -265,7 +264,7 @@
 
 
     <!-- this section will hold the projects detail -->
-    <section class="bg-Primary-Color bottom-10 m-4 mb-0 rounded-lg lg:h-[1500px] md:h-[1900px] sm:h-[3600px] ">
+    <section class="bg-Primary-Color bottom-10 m-4 mb-0 rounded-lg lg:h-[1500px] md:h-[1900px] sm:h-[3650px] ">
         
         <!-- parent div responsible for holding all the content within this section -->
         <div class="p-[100px]
@@ -449,8 +448,9 @@
             <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
 
             <!-- this div is used for placing child div in position -->
-            <div class="flex justify-center "> 
+            <div class="flex justify-center"> 
             <!-- this div will hold the image for the passsion section -->
+             <!-- this code bellow is for the layout in lg screen size -->
                 <div class="lg:grid pt-16 grid-cols-[200px_200px_200px_200px] grid-rows-[200px_400px_200px] gap-2 sm:hidden md:hidden">
                     <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[200px] w-[400px] rounded-[20px] col-span-2 ">
     
@@ -463,9 +463,9 @@
                     <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-4 ">
 
                     <!-- div holding passion quotes -->
-                    <div class="bg-black h-[200px] w-[400px] rounded-[20px] row-start-2 col-start-3 self-end">
+                    <img  src="./resources-for-web/image 8.jpg" class="bg-black h-[200px] w-[400px] rounded-[20px]  col-span-2 self-end">
                          
-                    </div>
+                </img>
                 </div>
 
                 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
@@ -482,10 +482,11 @@
                 
                     <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[223px] rounded-[20px] row-start-1 col-start-4 " loading="lazy">
 
-                    <img src="./resources-for-web/image 8.jpg" alt="hill landscape" class="h-[250px] w-[260px] rounded-[20px] col-span-2" loading="lazy">
+                    <img src="./resources-for-web/crain.jpg" alt="crain" class="h-[250px] w-[260px] rounded-[20px] col-span-2" loading="lazy">
 
                 </div>
 
+                <!-- this code provides the layout for the md screen size -->
                 <div class="md:flex flex-row justify-center items-center m-10 gap-2 lg:hidden sm:hidden overflow-scroll overflow-y-hidden">
                     <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[250px] w-[220px] rounded-[20px] col-span-2" loading="lazy">
     
@@ -535,15 +536,16 @@
         <!-- this will act as a parent div holding the testimonial -->
         <div class="flex flex-row justify-center">
 
-            <div class="relative pt-[30px] bg-[#B5B1B1] h-[300px] w-[350px] rounded-[20px] sm:h-[300px]  sm:m-[30px] ">
-                <span><img src="./resources-for-web/double-quotes.svg" alt="double-quotes" class="h-[70px] p-[5px]"></span>
-                <p class="p-[10px] font-kufam text-[18px]">Impressed by the work done , looking forward to make more projects</p>
+            <div class="relative pt-[30px] bg-[#B5B1B1] h-[300px] w-[350px] rounded-[20px] md:h-[300px] sm:h-[400px]  sm:m-[30px] ">
+                <span><img src="./resources-for-web/double-quotes.svg" alt="double-quotes" class="h-[70px] p-[1px]"></span>
+                <p class="p-[8px] font-kufam text-[15px]">Working with Saif MK has been a privilege. His editorial skills, keen eye for detail, and storytelling expertise make him an invaluable asset. He refines content without losing its essence and brings a passion for words that elevates every piece he touches.</p>
                 <div class="absolute bg-[#D9D9D9] h-[55px] lg:w-[200px] rounded-[20px] bottom-[-5px] lg:left-[170px] z-0 sm:left-[80px]  sm:w-[160px] ph:left-[180px] ph:w-[200px] mph:left-[120px] mph:w-[200px] me:left-[95px] me:w-[170px] mphn:left-[95px] mphn:w-[180px]"></div>
                 
                 <div class="flex items-center flex-col absolute bg-black h-[47px] lg:w-[176px] rounded-[20px] bottom-[-1px] lg:left-[175px] z-0 sm:left-[85px] sm:w-[145px] md:left-[185px] md:w-[165px] ph:left-[185px] ph:w-[156px] mph:left-[125px] mph:w-[158px] me:left-[100px] mphn:w-[165px]">
-                    <h5 class="text-[#B5B1B1] font-kufam pt-[5px]">JUSTIN MARTIN</h5>
-                    <p class="text-[#B5B1B1] font-kufam text-[11px]">@justinmartin</p>
-
+                    <h5 class="text-[#B5B1B1] font-kufam pt-[5px]">JESTIN MARTIN</h5>
+                    <a href="https://www.instagram.com/jestin._.martin/" target="_blank">
+                        <p class="text-[#B5B1B1] font-kufam text-[11px]">@jestin._.martin</p>
+                    </a>
                 </div>
 
             </div>  
@@ -578,39 +580,29 @@
         <!-- this div will hold all the social links  -->
         <div class="flex gap-[30px] items-center justify-center md:pt-[100px] lg:pt-[165px] sm:gap-[20px] sm:pt-[200px]">
 
-            <a href="mailto:Saifmkpvt@gmail.com">
+            <a href="mailto:Saifmkpvt@gmail.com"  target="_blank">
                 <img src="./resources-for-web/email-logo-footer.svg" alt="email-logo-white" class=" md lg:h-[45px] w-auto sm:h-8">
             </a>
 
-            <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/">
+            <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/"  target="_blank">
                 <img src="./resources-for-web/linkedin-logo-footer.svg" alt="linkedin-logo-white" class=" md lg:h-[45px] w-auto sm:h-8">
             </a>
 
-            <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19">
+            <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19"  target="_blank">
                 <img src="./resources-for-web/github-footer.png" alt="github-logo-white" class=" md lg:h-[45px] w-auto sm:h-8">
             </a>
 
-            <a href="https://www.instagram.com/saifmk10/">
+            <a href="https://www.instagram.com/saifmk10/" target="_blank">
                 <img src="./resources-for-web/instagram-logo-footer.svg" alt="instagram-logo-white" class=" md lg:h-[45px] w-auto sm:h-8">
             </a>
             
         </div>
-        <!-- connction not establishedd -->
     </section>
 
 
     <script src="text-animation.js"></script>
     <script src="./connection.js">
     </script>
-
-
-<!-- svg doesnt work properly , so will implement in the future -->
-<!-- svg made foe the filter (grainy-filter) -->
-<!-- <svg>
-    <filter id="grainyTexture"> 
-        <feTurbulence type = "turbulence" baseFrequency = "0.60"/>
-    </filter>       
-</svg> -->
     
 </body>
 </html>  
