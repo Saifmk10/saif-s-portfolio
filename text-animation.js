@@ -257,4 +257,8 @@ function handleClickOnScreenSize(){ //this will check the screen size and do the
     }
 }
 
+// scroll console log
+window.addEventListener("scroll", () => {
+    console.log(window.scrollY); // Logs the vertical scroll position
+});
 
