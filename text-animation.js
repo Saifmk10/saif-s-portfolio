@@ -252,14 +252,7 @@ document.addEventListener("keydown" , function(event){
 
 
 
-function handleClickOnScreenSizeProject1(){ //this will check the screen size and do the redirection
-    window.location.href = "case_study.html"; 
-}
 
-function handleClickOnScreenSizeProject2(){ //this will check the screen size and do the redirection
-    window.location.href = "AeroCast_case_Study.html"; 
-    
-}
 
 // scroll console log
 window.addEventListener("scroll", () => {
