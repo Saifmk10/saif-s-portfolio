@@ -14,15 +14,15 @@
     </script>
 
 
-    <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="output.css">    
+    <!-- <link rel="stylesheet" href="custom.css"> -->
+    <link rel="stylesheet" href="./output.css">    
     <link rel="icon" type="image/svg+xml" href="./resources-for-web/profile-image.svg">
 </head> 
 <body>
 
     
     <!-- this is the parent section for the home page that is holding the elements shown when the website opens up -->
-    <section class="lg:h-home-parent-container  m-4 p-2 rounded-lg  bg-Primary-Color sm:h-[680px]">
+    <section class="lg:h-home-parent-container  m-4 p-2 rounded-lg  bg-primary sm:h-[680px]">
 
 
         <!-- this nav bar is gonna hold the email section and also the link to other platforms -->
@@ -30,9 +30,9 @@
         <nav class="hidden lg:grid grid-cols-2  justify-evenly p-[20px]"> 
             <!-- the bellow code is mainly for large screen (laptops) -->
             <!-- this contains the hidden class so that if screen smaller then nav wont be displayed -->
-            <div class="bg-Email-section w-[400px] h-[50px] rounded-[80px] flex items-center justify-evenly">
-                <h3 class="p-[10px] font-isf font-isf-weight text-[15px]" id="email_to_copy">
-                    Saifmkpvt@gmail.com
+            <div class="bg-email-section w-[400px] h-[50px] rounded-[80px] flex items-center justify-evenly">
+                <h3 class="p-[10px] font-isf font-isf-weight  text-[15px]" id="email_to_copy">
+                    Saifmkpvt@gmail.com 
                 </h3>
                 <button class="bg-buttons  p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight" onclick="copyToClickBoard()" id="copy_button">
                     Copy
@@ -53,7 +53,7 @@
         
 
         <!-- mobile design for the nav bar -->
-        <nav class="lg:hidden bg-Email-section h-[50px] min-w-fit m-3 p-4 gap-4 rounded-[80px] flex justify-evenly items-center ">
+        <nav class="lg:hidden bg-email-section h-[50px] min-w-fit m-3 p-4 gap-4 rounded-[80px] flex justify-evenly items-center ">
             <!-- Icons for mobile navigation added bellow-->
 
             <!-- email icon-link to copy -->
@@ -111,7 +111,7 @@
                         md:p-[1px]
                         lg:p-[1px] ">
                 <h2 class="flex  items-center gap-4 font-kf font-kf-weight text-[50px]  
-                sm:text-[25px] sm:gap-2  
+                sm:text-[20px] sm:gap-2  
                 md:text-[35px] md:gap-2
                 lg:text-[45px] lg:gap-2">
                     HEY<span><img src="./resources-for-web/wave-hand-image.svg" alt="hand waving" class="h-[40px] 
@@ -126,8 +126,8 @@
 
             <!-- this is for the typograph of the things i do -->
             <div id="work-i-do" class=" justify-self-center overflow-hidden">
-                <h3 id="works-text"  class="font-jet typing-text typing-container
-                                            sm:text-[19px] sm:pt-[15px] sm:font-semibold  
+                <h3 id="works-text"  class="font-jet  typing-text typing-container
+                                            sm:text-[20px] sm:pt-[15px] sm:font-semibold  
                                             md:text-[30px] md:pt-[0px] md:font-jet-weight
                                             lg:text-[40px] lg:pt-[0px] lg:font-jet-weight"></h3>
             </div>
@@ -151,7 +151,7 @@
     
     <!-- section holding the about us and tech stack used -->
     <!-- The tech stack needs to be designed in such a way that it can be modified later -->
-    <section id="about-section" class="lg:h-home-parent-container  m-4 mb-0 rounded-lg  bg-Primary-Color sm:h-[1000px] overflow-hidden">
+    <section id="about-section" class="lg:h-home-parent-container  m-4 mb-0 rounded-lg  bg-primary sm:h-[1000px] overflow-hidden">
 
         <!-- div acts as a parent for the content that has been added in this section-->
         <div class="p-[100px]
@@ -264,7 +264,7 @@
 
 
     <!-- this section will hold the projects detail -->
-    <section class="bg-Primary-Color bottom-10 m-4 mb-0 rounded-lg lg:h-[1500px] md:h-[1900px] sm:h-[3650px] ">
+    <section class="bg-primary bottom-10 m-4 mb-0 rounded-lg lg:h-[1500px] md:h-[1900px] sm:h-[3650px] ">
         
         <!-- parent div responsible for holding all the content within this section -->
         <div class="p-[100px]
@@ -303,7 +303,7 @@
                         lg:h-[270px] lg:w-[360px] 
                         sm:w-auto sm:h-[250px] sm:mt-[20px]
                         md:h-[270px] md:w-[360px]
-                        images-parent" id="blur-on-click" onclick="handleClickOnScreenSize()">  <!-- handleClickOnScreenSize() this function will check the screen size and open the popup as required -->
+                        images-parent" id="blur-on-click" onclick="handleClickOnScreenSizeProject1()">  <!-- handleClickOnScreenSize() this function will check the screen size and open the popup as required -->
 
                         
 
@@ -337,41 +337,30 @@
                         lg:h-[270px] lg:w-[360px] 
                         sm:w-auto sm:h-[250px] sm:mt-[20px]
                         md:h-[270px] md:w-[360px]
-                        images-parent">  
+                        images-parent" id="blur-on-click" onclick="handleClickOnScreenSizeProject2()">  <!-- handleClickOnScreenSize() this function will check the screen size and open the popup as required -->
 
-                <div class="flex justify-center  align-middle bg-[#989595] rounded-t-[20px] 
+                        
+
+                <div class="flex justify-center bg-gradient-to-r from-[#000000] to-[#898888] rounded-t-[20px]
                 lg:h-[160px]
                 sm:h-[150px] sm:rounded-tr-[20px] sm:rounded-tl-[20px]
-                ">
-
-                    <div class="flex justify-center items-center flex-col pt-[20px]">
-                        <div class="relative">
-                            <img src="./resources-for-web/loading_array.svg" alt="loading-array" class="lg:h-[60px] lg:w-auto 
-                                                                                                sm:h-[40px] sm:w-auto">
-                            <img src="./resources-for-web/loading_filler.svg" alt="loading-filler" class="absolute lg:bottom-[6.5px] lg:left-[5px] lg:h-[43px] lg:w-auto sm:h-[28px] sm:w-auto sm:left-[3px] sm:bottom-[4.5px] filler-one">
-                            <img src="./resources-for-web/loading_filler.svg" alt="loading-filler" class="absolute lg:bottom-[6.5px] lg:left-[37px] lg:h-[43px] lg:w-auto sm:h-[28px] sm:w-auto sm:left-[25px] sm:bottom-[4.5px] filler-two">
-                            <img src="./resources-for-web/loading_filler.svg" alt="loading-filler" class="absolute lg:bottom-[6.5px] lg:left-[69px] lg:h-[43px] lg:w-auto sm:h-[28px] sm:w-auto sm:left-[46px] sm:bottom-[4.5px] filler-three">
-                            <img src="./resources-for-web/loading_filler.svg" alt="loading-filler" class="absolute lg:bottom-[6.5px] lg:left-[100px] lg:h-[43px] lg:w-auto sm:h-[28px] sm:w-auto sm:left-[67px] sm:bottom-[4.5px] filler-four">
-                            <img src="./resources-for-web/loading_filler.svg" alt="loading-filler" class="absolute lg:bottom-[6.7px] lg:left-[132px] lg:h-[43px] lg:w-auto sm:h-[28px] sm:w-auto sm:left-[89px] sm:bottom-[5px] filler-five">
-                            <img src="./resources-for-web/loading_filler.svg" alt="loading-filler" class="absolute lg:bottom-[7px] lg:left-[163px] lg:h-[43px] lg:w-auto sm:h-[28px] sm:w-auto sm:left-[110px] sm:bottom-[5px] filler-six">
-                            <img src="./resources-for-web/loading_filler.svg" alt="loading-filler" class="absolute lg:bottom-[px] lg:left-[195px] lg:h-[43px] lg:w-auto sm:h-[28px] sm:w-auto sm:left-[131px] sm:bottom-[5px] filler-seven">
-                        </div>
-                        <img src="./resources-for-web/in_progress.svg" alt="Loading_writing" class="lg:pr-[70px] md:pr-[50px] sm:pr-[30px] sm:h-[22px] lg:h-[30px]">
-                    </div>
+                "> 
+                    <!-- custom class has been used for scaling animation -->
+                    <img src="./resources-for-web/aerocast.png" alt="project-cover" class="h-[160px] w-auto image-scaling">
                 </div>
 
-                <div class="blur-card-unfinished-project">
-                    <h2 class="pt-[5px] pl-[20px] font-itim text-[23px]">INVESTO</h2>
-                    <p class="pl-[20px] ">Full-stack development</p>
+                <!-- div-blur holding the name and the techstack with the hover animation -->
+                <div class="div-blur">
+                    <h2 class="pt-[5px] pl-[20px] font-itim text-[23px] ">AEROCAST</h2>
+                    <p class="pl-[20px] ">Android App Development</p>
                 
-                    <!-- tech stack images div -->
-                    <div class="flex p-[10px] ">
-                        <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="" class="rounded-[20px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
-                        <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="" class="rounded-[30px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
-                        <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="" class="rounded-[20px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                <!-- tech stack images div -->
+                    <div class="flex p-[10px]">
+                        <img src="https://img.shields.io/badge/dart-0175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="" class="rounded-[20px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                        <img src="https://img.shields.io/badge/flutter-02569B.svg?style=for-the-badge&logo=flutter&logoColor=white" alt="" class="rounded-[30px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                        <img src="https://img.shields.io/badge/REST%20API-FF6F61.svg?style=for-the-badge&logo=api&logoColor=white" alt="" class="rounded-[20px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
                     </div>
                 </div>
-
             </div> <!-- end of the third project card -->
 
 
@@ -513,7 +502,7 @@
 
 
     <!-- this is section that will hold the testimonials of clients -->
-    <section id="about-section" class="  m-4 mb-0 rounded-lg  bg-Primary-Color lg:h-[700px] sm:h-auto overflow-hidden">
+    <section id="about-section" class="  m-4 mb-0 rounded-lg  bg-primary lg:h-[700px] sm:h-auto overflow-hidden">
         <div class="p-[100px] pt-[30px]
                     sm:p-[25px] sm:pt-[40px]
                     md:p-[40px]
@@ -562,8 +551,8 @@
             <h2 class="text-[#B5B1B1] font-gob lg:text-[50px] md:text-[40px] sm:text-[15px]">WANNA GET IN TOUCH?</h2>
 
             <form class="pt-[20px] flex gap-[20px] flex-col justify-center items-center" action="https://formsubmit.co/saifmkpvt@gmail.com" method="post">
-                <input type="text" name="query" class="placeholder-[#1E1E1E] placeholder:font-abel lg:w-[300px] lg:h-[40px] md:w-[300px] md:h-[40px] sm:h-[30px] rounded-lg " placeholder="QUERIES">
-                <input type="email" name="email" class="placeholder-[#1E1E1E] placeholder:font-abel lg:w-[300px] lg:h-[40px] md:w-[300px] md:h-[40px] sm:h-[30px] rounded-lg " placeholder="EMAIL ID">
+                <input type="text" name="query" class="placeholder-[#1E1E1E] bg-primary placeholder:font-abel lg:w-[300px] lg:h-[40px] md:w-[300px] md:h-[40px] sm:h-[30px] rounded-lg " placeholder="QUERIES">
+                <input type="email" name="email" class="placeholder-[#1E1E1E]  bg-primary placeholder:font-abel lg:w-[300px] lg:h-[40px] md:w-[300px] md:h-[40px] sm:h-[30px] rounded-lg " placeholder="EMAIL ID">
                 
                 <!-- input field used to  -->
                 <input type="hidden" name="_next" value="https://saifmk10.github.io/saif-s-portfolio/">

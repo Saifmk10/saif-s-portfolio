@@ -1,0 +1,101 @@
+/* Instrumental sans font */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* kanit font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* JetBrains Mono font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* Krona one font */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+/* Kufam font */
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* itim font */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/* Abel font */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* goblin font */
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+
+@import "tailwindcss";
+
+
+
+/* custom file created for animation */
+@import './custom.css';
+
+@theme {
+  /* Colors */
+  --color-primary: #D9D9D9;
+  --color-email-section: #dfdedf;
+  --color-buttons: #ffffff;
+
+  /* Heights */
+  --height-home-parent-container: 750px;
+  --height-home-parent-container-sm: 600px;
+
+  /* Screens */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 640px;
+  --breakpoint-ph: 425px;
+  --breakpoint-mph: 375px;
+  --breakpoint-mphn: 359px;
+  --breakpoint-me: 332px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  /* Fonts */
+  --font-isf: "Instrument Sans", serif;
+  --font-kf: "Kanit", sans-serif;
+  --font-jet: "JetBrains Mono", monospace;
+  --font-kOne: "Krona One", serif;
+  --font-kufam: "Kufam", serif;
+  --font-itim: "Itim", serif;
+  --font-abel: "Abel", serif;
+  --font-gob: "Goblin One", serif;
+
+  /* Font Optical Sizing */
+  --font-isf-opticalSizing: auto;
+  --font-kufam-opticalSizing: auto;
+
+  /* Font Weights */
+  --font-isf-weight: 500;
+  --font-kf-weight: 450;
+  --font-jet-weight: 400;
+  --font-kOne-weight: 400;
+  --font-kufam-weight: 500;
+  --font-itim-weight: 400;
+
+  /* Font Styles */
+  --font-isf-style: normal;
+  --font-kf-style: normal;
+  --font-jet-style: normal;
+  --font-kOne-style: normal;
+  --font-kufam-style: normal;
+  --font-itim-style: normal;
+
+  /* Font Sizes */
+  --font-sm: 320px;
+  --font-md: 640px;
+  --font-lg: 50px;
+  --font-laptop: 1024px;
+}
+
+@layer base {
+  /* Animations */
+  @keyframes reveal {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-reveal {
+    animation: reveal linear both;
+  }
+}

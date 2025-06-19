@@ -249,12 +249,16 @@ document.addEventListener("keydown" , function(event){
         bgBlur.style.filter = "none";
     }
 });
-function handleClickOnScreenSize(){ //this will check the screen size and do the redirection
-    if (window.innerWidth < 640) { 
-        window.location.href = "case_study.html"; 
-    } else {
-        popupOpen(); 
-    }
+
+
+
+function handleClickOnScreenSizeProject1(){ //this will check the screen size and do the redirection
+    window.location.href = "case_study.html"; 
+}
+
+function handleClickOnScreenSizeProject2(){ //this will check the screen size and do the redirection
+    window.location.href = "AeroCast_case_Study.html"; 
+    
 }
 
 // scroll console log
