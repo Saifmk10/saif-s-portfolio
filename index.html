@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAIFMK</title>
-<!-- google tag -->
+    <!-- google tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQVK3JCTTY"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-TQVK3JCTTY');
 
@@ -16,45 +17,53 @@
 
 
     <!-- <link rel="stylesheet" href="custom.css"> -->
-    <link rel="stylesheet" href="./output.css">    
+    <link rel="stylesheet" href="./output.css">
     <link rel="icon" type="image/svg+xml" href="./resources-for-web/profile-image.svg">
-</head> 
+</head>
+
 <body>
 
-    
+
     <!-- this is the parent section for the home page that is holding the elements shown when the website opens up -->
     <section class="lg:h-home-parent-container  m-4 p-2 rounded-lg  bg-primary sm:h-[680px]">
 
 
         <!-- this nav bar is gonna hold the email section and also the link to other platforms -->
-         <!-- there is some glitch here due to which the nav is not seen for tab prio-10 -->
-        <nav class="hidden lg:grid grid-cols-2  justify-evenly p-[20px]"> 
+        <!-- there is some glitch here due to which the nav is not seen for tab prio-10 -->
+        <nav class="hidden lg:grid grid-cols-2  justify-evenly p-[20px]">
             <!-- the bellow code is mainly for large screen (laptops) -->
             <!-- this contains the hidden class so that if screen smaller then nav wont be displayed -->
             <div class="bg-email-section w-[400px] h-[50px] rounded-[80px] flex items-center justify-evenly">
                 <h3 class="p-[10px] font-isf font-isf-weight  text-[15px]" id="email_to_copy">
-                    Saifmkpvt@gmail.com 
+                    Saifmkpvt@gmail.com
                 </h3>
-                <button class="bg-buttons  p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight" onclick="copyToClickBoard()" id="copy_button">
+                <button class="bg-buttons  p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight"
+                    onclick="copyToClickBoard()" id="copy_button">
                     Copy
-                </button> 
-                <a href="./resources-for-web/Saif Mohamed K.pdf" target="_blank">
-                <button class="bg-buttons p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight ">
-                    CV
                 </button>
-            </a> 
+                <a href="./resources-for-web/Saif Mohamed K.pdf" target="_blank">
+                    <button class="bg-buttons p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight ">
+                        CV
+                    </button>
+                </a>
             </div>
             <div class=" flex items-center justify-self-end">
-                <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/" target="_blank" class="font-isf font-isf-weight on-hover-underline">Linkdin</a> <span class="font-isf font-isf-weight p-1">/</span>
-                <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19 "  target="_blank" class="ml-1 font-isf font-isf-weight on-hover-underline">Github</a>  <span class="font-isf font-isf-weight p-1">/</span>
-                <a href="https://www.instagram.com/saifmk10/"  target="_blank" class="ml-1 font-isf font-isf-weight on-hover-underline">Instagram</a>
+                <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/" target="_blank"
+                    class="font-isf font-isf-weight on-hover-underline">Linkdin</a> <span
+                    class="font-isf font-isf-weight p-1">/</span>
+                <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19 " target="_blank"
+                    class="ml-1 font-isf font-isf-weight on-hover-underline">Github</a> <span
+                    class="font-isf font-isf-weight p-1">/</span>
+                <a href="https://www.instagram.com/saifmk10/" target="_blank"
+                    class="ml-1 font-isf font-isf-weight on-hover-underline">Instagram</a>
             </div>
         </nav>
 
-        
+
 
         <!-- mobile design for the nav bar -->
-        <nav class="lg:hidden bg-email-section h-[50px] min-w-fit m-3 p-4 gap-4 rounded-[80px] flex justify-evenly items-center ">
+        <nav
+            class="lg:hidden bg-email-section h-[50px] min-w-fit m-3 p-4 gap-4 rounded-[80px] flex justify-evenly items-center ">
             <!-- Icons for mobile navigation added bellow-->
 
             <!-- email icon-link to copy -->
@@ -64,19 +73,20 @@
             <!-- linkedin icon-link -->
             <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/" target="_blank" class="text-black">
                 <img src="./resources-for-web/linkedin-logo.svg" alt="LinkedIn" class="w-8 h-8">
-              </a>
+            </a>
             <!-- Github-icon-link -->
-            <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19" target="_blank" class="text-black">
+            <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19" target="_blank"
+                class="text-black">
                 <img src="./resources-for-web/github.svg" alt="Github" class="w-8 h-8">
             </a>
             <!-- Instagram-icon-link -->
             <a href="https://www.instagram.com/saifmk10/" target="_blank" class="text-black">
-              <img src="./resources-for-web/instagram-logo.svg" alt="Instagram" class="w-8 h-8">
-            </a>        
+                <img src="./resources-for-web/instagram-logo.svg" alt="Instagram" class="w-8 h-8">
+            </a>
         </nav>
 
 
-     
+
 
         <!-- this bellow divs will hold the content for the intro(profile , about , aimation) -->
         <div class=" p-[50px] grid grid-rows-[auto , auto , auto , auto] 
@@ -115,11 +125,13 @@
                 sm:text-[20px] sm:gap-2  
                 md:text-[35px] md:gap-2
                 lg:text-[45px] lg:gap-2">
-                    HEY<span><img src="./resources-for-web/wave-hand-image.svg" alt="hand waving" class="h-[40px] 
+                    HEY<span><img src="./resources-for-web/wave-hand-image.svg" alt="hand waving"
+                            class="h-[40px] 
                                                                                                         sm:h-[30px]
                                                                                                         lg:h-[40px]
                                                                                                         md:h-[40px]
-                                                                                                        motion-opacity-in-[0%] motion-rotate-in-[15deg] motion-duration-[900ms]/opacity motion-duration-[300ms]/rotate motion-ease-spring-bounciest"></span>I DO
+                                                                                                        motion-opacity-in-[0%] motion-rotate-in-[15deg] motion-duration-[900ms]/opacity motion-duration-[300ms]/rotate motion-ease-spring-bounciest"></span>I
+                    DO
                 </h2>
             </div>
 
@@ -127,39 +139,45 @@
 
             <!-- this is for the typograph of the things i do -->
             <div id="work-i-do" class=" justify-self-center overflow-hidden">
-                <h3 id="works-text"  class="font-jet  typing-text typing-container
+                <h3 id="works-text" class="font-jet  typing-text typing-container
                                             sm:text-[20px] sm:pt-[15px] sm:font-semibold  
                                             md:text-[30px] md:pt-[0px] md:font-jet-weight
                                             lg:text-[40px] lg:pt-[0px] lg:font-jet-weight"></h3>
             </div>
-            
+
+
+
             <!-- this div will hold the arrow and hope fully the animation in future -->
             <div class="flex flex-col items-center justify-center rounded-full h-[130px] w-auto
-                        sm:pt-[40px]">
-                 <a href="#about-section">
-                    <img src="./resources-for-web/down-arrow.svg" alt="arrow-image" class="h-[50px] w-auto animate-bounce" >
-                 </a>       
+                        sm:pt-[50px]">
+                <a href="#about-section">
+                    <img src="./resources-for-web/down-arrow.svg" alt="arrow-image"
+                        class="h-[50px] w-auto animate-bounce">
+                </a>
                 <p class="">Scroll</p>
             </div>
-            
-        
+
+
+
+
         </div>
     </section>
 
 
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= ABOUT ME & TECH STACK SECTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
-    
+
     <!-- section holding the about us and tech stack used -->
     <!-- The tech stack needs to be designed in such a way that it can be modified later -->
-    <section id="about-section" class="lg:h-home-parent-container  m-4 mb-0 rounded-lg  bg-primary sm:h-[1000px] overflow-hidden">
+    <section id="about-section"
+        class="lg:h-home-parent-container  m-4 mb-0 rounded-lg  bg-primary sm:h-[1000px] overflow-hidden">
 
         <!-- div acts as a parent for the content that has been added in this section-->
         <div class="p-[100px]
                     sm:p-[25px] sm:pt-[40px]
                     md:p-[40px]
                     lg:p-[100px]">
-            
+
             <div class="">
                 <h4 class="text-[34px] font-kOne 
                             sm:text-[25px] ">Who am i</h4>
@@ -168,16 +186,22 @@
             <div class="relative">
                 <h2 class="text-[36px] font-kOne relative z-10 ">HELLO</h2>
                 <div class="absolute bg-[#FEF200] h-[16px] w-[170px] bottom-2 left-0 z-0"></div>
-              </div>
+            </div>
 
             <div>
                 <p class="pt-[15px] font-kufam 
                             sm:text-[15px] sm:font-kufam
                             md:text-[18px] 
-                            lg:text-[18px]"
-                >I’m Saif, a software Developer with expertise in full-stack development and Android app development, specializing in responsive UI/UX design 
-and backend optimization. Skilled in Java, Dart, PHP, and Python, with hands-on experience in API integration and database security.
- Passionate about solving complex problems, optimizing performance, and building scalable, industry-grade applications</div>
+                            lg:text-[18px]">I’m Saif, a software Developer with expertise in full-stack development and
+                    Android app development, specializing in responsive UI/UX design
+                    and backend optimization. Skilled in Java, Dart, PHP, and Python, with hands-on experience in API
+                    integration and database security.
+                    Passionate about solving complex problems, optimizing performance, and building scalable,
+                    industry-grade applications. <span class="lg:hidden">Checkout my <a href="./resources-for-web/Saif Mohamed K.pdf" target="_blank">
+                        <u class="relative z-1">resume</u>
+                    </a>
+                    </span>
+            </div>
 
             <!-- BELLOW code contains tech stack code -->
             <div class="relative pt-[90px]">
@@ -192,71 +216,90 @@ and backend optimization. Skilled in Java, Dart, PHP, and Python, with hands-on 
                     sm:text-[15px] 
                     md:text-[18px] 
                     lg:text-[18px]">
-                Great tools empower great creations. Here are the technologies I trust to turn code into experiences and ideas into reality.
+                Great tools empower great creations. Here are the technologies I trust to turn code into experiences and
+                ideas into reality.
             </p>
 
             <!-- the design changes for the destop screen and the mobile screen -->
             <div class="grid lg:pt-[20px] lg:grid-cols-[repeat(auto-fit,minmax(100px,3fr))] lg:overflow-visible gap-3
                         sm:grid sm:grid-cols-2 sm:h-[300px] sm:pt-[40px] sm:overflow-y-scroll sm:overflow-x-hidden
                         ">
-                        <a href="https://en.wikipedia.org/wiki/JavaScript">
-                            <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="js" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Node.js">
-                            <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="nodejs" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Flutter_(software)">
-                            <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="flutter" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Tailwind_CSS">
-                            <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwind" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/HTML5">
-                            <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="html" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">
-                            <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="java" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Dart_(programming_language)">
-                            <img src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="dart" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/GitHub_Pages">
-                            <img src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white" alt="github pages" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/MySQL">
-                            <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="mysql" class="h-[40px] w-auto rounded-[10px] lg:m-[10px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Figma_(software)">
-                            <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="figma" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <!-- <a href="https://en.wikipedia.org/wiki/LeetCode">
+                <a href="https://en.wikipedia.org/wiki/JavaScript">
+                    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                        alt="js" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Node.js">
+                    <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
+                        alt="nodejs" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Flutter_(software)">
+                    <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white"
+                        alt="flutter" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Tailwind_CSS">
+                    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                        alt="tailwind" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/HTML5">
+                    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+                        alt="html" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">
+                    <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
+                        alt="java" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Dart_(programming_language)">
+                    <img src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white"
+                        alt="dart" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/GitHub_Pages">
+                    <img src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white"
+                        alt="github pages" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/MySQL">
+                    <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
+                        alt="mysql" class="h-[40px] w-auto rounded-[10px] lg:m-[10px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Figma_(software)">
+                    <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
+                        alt="figma" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <!-- <a href="https://en.wikipedia.org/wiki/LeetCode">
                             <img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06" alt="leetcode" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
                         </a> -->
-                        <a href="https://en.wikipedia.org/wiki/Npm_(software)">
-                            <img src="https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white" alt="npm" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Blender_(software)">
-                            <img src="https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white" alt="blender" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/C_(programming_language)">
-                            <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="c" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/C%2B%2B">
-                            <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="cpp" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/PHP">
-                            <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="php" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/PowerShell">
-                            <img src="https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white" alt="shell" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Linux">
-                            <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="linux" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Ubuntu">
-                            <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="ubuntu" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
-                        </a>
-                        
+                <a href="https://en.wikipedia.org/wiki/Npm_(software)">
+                    <img src="https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white"
+                        alt="npm" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Blender_(software)">
+                    <img src="https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white"
+                        alt="blender" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/C_(programming_language)">
+                    <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
+                        alt="c" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/C%2B%2B">
+                    <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+                        alt="cpp" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/PHP">
+                    <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white"
+                        alt="php" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/PowerShell">
+                    <img src="https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white"
+                        alt="shell" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Linux">
+                    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
+                        alt="linux" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Ubuntu">
+                    <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"
+                        alt="ubuntu" class="h-[40px] w-auto rounded-[10px] lg:m-[10px] sm:m-[1px]">
+                </a>
+
             </div>
         </div>
     </section>
@@ -267,7 +310,7 @@ and backend optimization. Skilled in Java, Dart, PHP, and Python, with hands-on 
 
     <!-- this section will hold the projects detail -->
     <section class="bg-primary bottom-10 m-4 mb-0 rounded-lg lg:h-[1500px] md:h-[1900px] sm:h-[3650px] ">
-        
+
         <!-- parent div responsible for holding all the content within this section -->
         <div class="p-[100px]
                     sm:p-[25px] sm:pt-[40px]
@@ -276,94 +319,107 @@ and backend optimization. Skilled in Java, Dart, PHP, and Python, with hands-on 
             <div class="relative">
                 <h4 class="font-kOne relative z-10 lg:text-[36px] sm:text-[28px] md:text-[36px]
                             ">PROJECTS</h4>
-                <div class="absolute bg-[#FEF200] h-[16px] lg:w-[230px] md:w-[230px] sm:w-[180px] bottom-1 left-0 z-0 "></div>
+                <div class="absolute bg-[#FEF200] h-[16px] lg:w-[230px] md:w-[230px] sm:w-[180px] bottom-1 left-0 z-0 ">
+                </div>
             </div>
 
             <p class="font-kufam pt-[20px]
             sm:text-[15px]
             md:text-[18px] 
-            lg:text-[18px]">Projects are where ideas take shape, creativity meets code, and innovation transforms into reality. Each project is a step forward, a challenge conquered, and a story of passion-driven progress</p>
+            lg:text-[18px]">Projects are where ideas take shape, creativity meets code, and innovation transforms into
+                reality. Each project is a step forward, a challenge conquered, and a story of passion-driven progress
+            </p>
         </div>
 
         <!-- popup section js connected text-animation.js 215 -->
         <div class="w-[800px] h-[800px] overflow-hidden bg-white p-4 rounded-lg align-middle hidden" id="trig">
             <div class="relative h-[800px] w-[800px] ">
-                <img src="./resources-for-web/cancel-button-popup-page.svg" alt="cancel" class=" fixed top-2 right-[400px] h-[50px] w-auto " onclick="popupClose()">
-                <iframe src="./case_study.html" frameborder="0" class="w-full h-full overflow-y-hidden p-0 m-0 border-none" allowfullscreen></iframe>
+                <img src="./resources-for-web/cancel-button-popup-page.svg" alt="cancel"
+                    class=" fixed top-2 right-[400px] h-[50px] w-auto " onclick="popupClose()">
+                <iframe src="./case_study.html" frameborder="0"
+                    class="w-full h-full overflow-y-hidden p-0 m-0 border-none" allowfullscreen></iframe>
             </div>
         </div>
 
         <!-- div will act as a parent container and will hold the projects  -->
         <div class="lg:flex lg:gap-[100px] lg:pl-[100px] 
                     sm:flex-row  sm:gap-2 sm:p-[20px] sm:pt-0">
-            
-                    
+
+
 
             <!-- -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=================================================== -->
             <!-- content about investo will be added here (responsive) -->
             <a href="./case_study.html" target="_blank" rel="noopener noreferrer">
-            <div class="relative bg-[#B5B1B1] rounded-[20px] overflow-hidden
+                <div class="relative bg-[#B5B1B1] rounded-[20px] overflow-hidden
                         lg:h-[270px] lg:w-[360px] 
                         sm:w-auto sm:h-[250px] sm:mt-[20px]
                         md:h-[270px] md:w-[360px]
-                        images-parent" id="blur-on-click">  
+                        images-parent" id="blur-on-click">
 
-                <div class="flex justify-center bg-gradient-to-r from-[#673abf] to-[#552189] rounded-t-[20px]
+                    <div class="flex justify-center bg-gradient-to-r from-[#673abf] to-[#552189] rounded-t-[20px]
                 lg:h-[160px]
                 sm:h-[150px] sm:rounded-tr-[20px] sm:rounded-tl-[20px]
-                "> 
-                    <!-- custom class has been used for scaling animation -->
-                    <img src="./resources-for-web/investo-cover-new.png" alt="project-cover" class="h-[160px] w-auto image-scaling">
-                </div>
-
-                <!-- div-blur holding the name and the techstack with the hover animation -->
-                <div class="div-blur">
-                    <h2 class="pt-[5px] pl-[20px] font-itim text-[23px] ">INVESTO</h2>
-                    <p class="pl-[20px] ">Full-stack development</p>
-                
-                <!-- tech stack images div -->
-                    <div class="flex p-[10px]">
-                        <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="" class="rounded-[20px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
-                        <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="" class="rounded-[30px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
-                        <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="" class="rounded-[20px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                ">
+                        <!-- custom class has been used for scaling animation -->
+                        <img src="./resources-for-web/investo-cover-new.png" alt="project-cover"
+                            class="h-[160px] w-auto image-scaling">
                     </div>
-                </div>
-            </div> <!-- end of the main project card -->
+
+                    <!-- div-blur holding the name and the techstack with the hover animation -->
+                    <div class="div-blur">
+                        <h2 class="pt-[5px] pl-[20px] font-itim text-[23px] ">INVESTO</h2>
+                        <p class="pl-[20px] ">Full-stack development</p>
+
+                        <!-- tech stack images div -->
+                        <div class="flex p-[10px]">
+                            <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
+                                alt="" class="rounded-[20px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                            <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                                alt="" class="rounded-[30px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                            <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white"
+                                alt="" class="rounded-[20px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                        </div>
+                    </div>
+                </div> <!-- end of the main project card -->
             </a>
 
             <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
             <!-- Aerocast project card  -->
             <a href="./AeroCast_case_study.html" target="_blank" rel="noopener noreferrer">
-            <div class="relative bg-[#B5B1B1] rounded-[20px] overflow-hidden
+                <div class="relative bg-[#B5B1B1] rounded-[20px] overflow-hidden
                         lg:h-[270px] lg:w-[360px] 
                         sm:w-auto sm:h-[250px] sm:mt-[20px]
                         md:h-[270px] md:w-[360px]
                         images-parent" id="blur-on-click">
 
-                        
 
-                <div class="flex justify-center bg-gradient-to-r from-[#000000] to-[#898888] rounded-t-[20px]
+
+                    <div class="flex justify-center bg-gradient-to-r from-[#000000] to-[#898888] rounded-t-[20px]
                 lg:h-[160px]
                 sm:h-[150px] sm:rounded-tr-[20px] sm:rounded-tl-[20px]
-                "> 
-                    <!-- custom class has been used for scaling animation -->
-                    <img src="./resources-for-web/aerocast.png" alt="project-cover" class="h-[160px] w-auto image-scaling">
-                </div>
-
-                <!-- div-blur holding the name and the techstack with the hover animation -->
-                <div class="div-blur">
-                    <h2 class="pt-[5px] pl-[20px] font-itim text-[23px] ">AEROCAST</h2>
-                    <p class="pl-[20px] ">Android App Development</p>
-                
-                <!-- tech stack images div -->
-                    <div class="flex p-[10px]">
-                        <img src="https://img.shields.io/badge/dart-0175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="" class="rounded-[20px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
-                        <img src="https://img.shields.io/badge/flutter-02569B.svg?style=for-the-badge&logo=flutter&logoColor=white" alt="" class="rounded-[30px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
-                        <img src="https://img.shields.io/badge/REST%20API-FF6F61.svg?style=for-the-badge&logo=api&logoColor=white" alt="" class="rounded-[20px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                ">
+                        <!-- custom class has been used for scaling animation -->
+                        <img src="./resources-for-web/aerocast.png" alt="project-cover"
+                            class="h-[160px] w-auto image-scaling">
                     </div>
-                </div>
-            </div> <!-- end of the Aerocast project card -->
+
+                    <!-- div-blur holding the name and the techstack with the hover animation -->
+                    <div class="div-blur">
+                        <h2 class="pt-[5px] pl-[20px] font-itim text-[23px] ">AEROCAST</h2>
+                        <p class="pl-[20px] ">Android App Development</p>
+
+                        <!-- tech stack images div -->
+                        <div class="flex p-[10px]">
+                            <img src="https://img.shields.io/badge/dart-0175C2.svg?style=for-the-badge&logo=dart&logoColor=white"
+                                alt="" class="rounded-[20px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                            <img src="https://img.shields.io/badge/flutter-02569B.svg?style=for-the-badge&logo=flutter&logoColor=white"
+                                alt="" class="rounded-[30px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                            <img src="https://img.shields.io/badge/REST%20API-FF6F61.svg?style=for-the-badge&logo=api&logoColor=white"
+                                alt="" class="rounded-[20px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                        </div>
+                    </div>
+                </div> <!-- end of the Aerocast project card -->
             </a>
 
             <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
@@ -374,12 +430,12 @@ and backend optimization. Skilled in Java, Dart, PHP, and Python, with hands-on 
                         lg:h-[270px] lg:w-[360px] 
                         sm:w-auto sm:h-[250px] sm:mt-[20px]
                         md:h-[270px] md:w-[360px]
-                        images-parent">  
+                        images-parent">
 
                 <div class="flex justify-center  align-middle bg-[#989595] rounded-t-[20px] 
                 lg:h-[160px]
                 sm:h-[150px] sm:rounded-tr-[20px] sm:rounded-tl-[20px]
-                ">  
+                ">
 
                     <div class="flex justify-center items-center flex-col pt-[20px]">
                         <!-- <div class="relative">
@@ -397,29 +453,32 @@ and backend optimization. Skilled in Java, Dart, PHP, and Python, with hands-on 
                         <h2 class="pt-[5px] pl-[20px] font-itim text-[23px]">COMING SOON</h2>
                     </div>
 
-                    
+
                 </div>
 
                 <div class="blur-card-unfinished-project">
                     <h2 class="pt-[5px] pl-[20px] font-itim text-[23px]">INVESTO</h2>
                     <p class="pl-[20px] ">Full-stack development</p>
-                
+
                     <!-- tech stack images div -->
                     <div class="flex p-[10px] ">
-                        <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="" class="rounded-[20px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
-                        <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="" class="rounded-[30px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
-                        <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="" class="rounded-[20px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                        <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
+                            alt="" class="rounded-[20px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                        <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                            alt="" class="rounded-[30px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                        <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white"
+                            alt="" class="rounded-[20px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
                     </div>
                 </div>
 
             </div> <!-- end of the third project card -->
 
-        </div> <!-- end of the parent container that is holding the project cards --> 
-        
+        </div> <!-- end of the parent container that is holding the project cards -->
+
 
         <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
-        
-        
+
+
         <!-- this new div acts as a section holding the passion -->
         <div class="p-[100px] pt-[30px]
                     sm:p-[25px] sm:pt-[40px]
@@ -429,77 +488,98 @@ and backend optimization. Skilled in Java, Dart, PHP, and Python, with hands-on 
             <div class="relative pt-[30px]">
                 <h4 class="font-kOne relative z-10 lg:text-[36px] sm:text-[28px] md:text-[36px]
                             ">PASSION</h4>
-                <div class="absolute bg-[#FEF200] h-[16px] lg:w-[230px] md:w-[230px] sm:w-[180px] bottom-1 left-0 z-0 "></div>
+                <div class="absolute bg-[#FEF200] h-[16px] lg:w-[230px] md:w-[230px] sm:w-[180px] bottom-1 left-0 z-0 ">
+                </div>
             </div>
-        
+
             <p class="font-kufam pt-[20px]
             sm:text-[15px] 
             md:text-[18px] 
-            lg:text-[18px]">My passion lies in capturing moments and telling stories through photography and animation. I aim to bring creativity to life, blending visual art and motion to create impactful, engaging experiences.</p>
+            lg:text-[18px]">My passion lies in capturing moments and telling stories through photography and animation.
+                I aim to bring creativity to life, blending visual art and motion to create impactful, engaging
+                experiences.</p>
         </div>
-            <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
-                <!-- this will hold a diff layout for the larg screens -->
-            <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+        <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+        <!-- this will hold a diff layout for the larg screens -->
+        <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
 
-            <!-- this div is used for placing child div in position -->
-            <div class="flex justify-center"> 
+        <!-- this div is used for placing child div in position -->
+        <div class="flex justify-center">
             <!-- this div will hold the image for the passsion section -->
-             <!-- this code bellow is for the layout in lg screen size -->
-                <div class="lg:grid pt-16 grid-cols-[200px_200px_200px_200px] grid-rows-[200px_400px_200px] gap-2 sm:hidden md:hidden">
-                    <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[200px] w-[400px] rounded-[20px] col-span-2 " loading="eager">
-    
-                    <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-auto rounded-[20px] col-start-1 " loading="eager">
-                
-                    <img src="./resources-for-web/image 3.jpg" alt="flower close up" class="h-[400px] w-[200px] rounded-[20px] " loading="eager">
+            <!-- this code bellow is for the layout in lg screen size -->
+            <div
+                class="lg:grid pt-16 grid-cols-[200px_200px_200px_200px] grid-rows-[200px_400px_200px] gap-2 sm:hidden md:hidden">
+                <img src="./resources-for-web/image 7.jpg" alt="hill landscape"
+                    class="h-[200px] w-[400px] rounded-[20px] col-span-2 " loading="eager">
 
-                    <img src="./resources-for-web/image 1.jpg" alt="the cat" class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-3 " loading="eager">
-                
-                    <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-4 " loading="eager">
+                <img src="./resources-for-web/image 5.jpg" alt="flower kochi"
+                    class="h-[400px] w-auto rounded-[20px] col-start-1 " loading="eager">
 
-                    <!-- div holding passion quotes -->
-                    <img  src="./resources-for-web/image 8.jpg" class="bg-black h-[200px] w-[400px] rounded-[20px]  col-span-2 self-end" loading="eager">
-                         
+                <img src="./resources-for-web/image 3.jpg" alt="flower close up"
+                    class="h-[400px] w-[200px] rounded-[20px] " loading="eager">
+
+                <img src="./resources-for-web/image 1.jpg" alt="the cat"
+                    class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-3 " loading="eager">
+
+                <img src="./resources-for-web/image 6.jpg" alt="road"
+                    class="h-[400px] w-[200px] rounded-[20px] row-start-1 col-start-4 " loading="eager">
+
+                <!-- div holding passion quotes -->
+                <img src="./resources-for-web/image 8.jpg"
+                    class="bg-black h-[200px] w-[400px] rounded-[20px]  col-span-2 self-end" loading="eager">
+
                 </img>
-                </div>
+            </div>
 
-                <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
-                    <!-- the bellow code is the same one for the passion images but with a different layout for the sm view port -->
-                <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
-                <div class="sm:flex flex-col justify-center items-center m-10 gap-2 lg md:hidden lg:hidden">
-                    <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[250px] w-[260px] rounded-[20px] col-span-2" loading="eager">
-    
-                    <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-[220px] rounded-[20px] col-start-1 " loading="eager">
-                
-                    <img src="./resources-for-web/image 3.jpg" alt="flower close up" class="h-[400px] w-auto rounded-[20px] " loading="eager">
+            <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+            <!-- the bellow code is the same one for the passion images but with a different layout for the sm view port -->
+            <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+            <div class="sm:flex flex-col justify-center items-center m-10 gap-2 lg md:hidden lg:hidden">
+                <img src="./resources-for-web/image 7.jpg" alt="hill landscape"
+                    class="h-[250px] w-[260px] rounded-[20px] col-span-2" loading="eager">
 
-                    <img src="./resources-for-web/image 1.jpg" alt="the cat" class="h-[400px] w-auto rounded-[20px] row-start-1 col-start-3 " loading="eager">
-                
-                    <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[223px] rounded-[20px] row-start-1 col-start-4 " loading="eager">
+                <img src="./resources-for-web/image 5.jpg" alt="flower kochi"
+                    class="h-[400px] w-[220px] rounded-[20px] col-start-1 " loading="eager">
 
-                    <img src="./resources-for-web/crain.jpg" alt="crain" class="h-[250px] w-[260px] rounded-[20px] col-span-2" loading="eager">
+                <img src="./resources-for-web/image 3.jpg" alt="flower close up"
+                    class="h-[400px] w-auto rounded-[20px] " loading="eager">
 
-                </div>
+                <img src="./resources-for-web/image 1.jpg" alt="the cat"
+                    class="h-[400px] w-auto rounded-[20px] row-start-1 col-start-3 " loading="eager">
 
-                <!-- this code provides the layout for the md screen size -->
-                <div class="md:flex flex-row justify-center items-center m-10 gap-2 lg:hidden sm:hidden overflow-scroll overflow-y-hidden">
-                    <img src="./resources-for-web/image 7.jpg" alt="hill landscape" class="h-[250px] w-[220px] rounded-[20px] col-span-2" loading="eager">
-    
-                    <img src="./resources-for-web/image 5.jpg" alt="flower kochi" class="h-[400px] w-[220px] rounded-[20px] col-start-1 " loading="eager">
-                
-                    <img src="./resources-for-web/image 3.jpg" alt="flower close up" class="h-[400px] w-auto rounded-[20px] " loading="eager">
+                <img src="./resources-for-web/image 6.jpg" alt="road"
+                    class="h-[400px] w-[223px] rounded-[20px] row-start-1 col-start-4 " loading="eager">
 
-                    <img src="./resources-for-web/image 1.jpg" alt="the cat" class="h-[400px] w-auto rounded-[20px] row-start-1 col-start-3 " loading="eager">
-                
-                    <img src="./resources-for-web/image 6.jpg" alt="road" class="h-[400px] w-[223px] rounded-[20px] row-start-1 col-start-4 " loading="eager"
-                    >
+                <img src="./resources-for-web/crain.jpg" alt="crain"
+                    class="h-[250px] w-[260px] rounded-[20px] col-span-2" loading="eager">
 
-                    <!-- div holding passion quotes -->
-                    <div class="bg-black h-[200px] w-[260px] rounded-[20px] "></div>
-                </div>
-               
-         </div>
+            </div>
 
-         
+            <!-- this code provides the layout for the md screen size -->
+            <div
+                class="md:flex flex-row justify-center items-center m-10 gap-2 lg:hidden sm:hidden overflow-scroll overflow-y-hidden">
+                <img src="./resources-for-web/image 7.jpg" alt="hill landscape"
+                    class="h-[250px] w-[220px] rounded-[20px] col-span-2" loading="eager">
+
+                <img src="./resources-for-web/image 5.jpg" alt="flower kochi"
+                    class="h-[400px] w-[220px] rounded-[20px] col-start-1 " loading="eager">
+
+                <img src="./resources-for-web/image 3.jpg" alt="flower close up"
+                    class="h-[400px] w-auto rounded-[20px] " loading="eager">
+
+                <img src="./resources-for-web/image 1.jpg" alt="the cat"
+                    class="h-[400px] w-auto rounded-[20px] row-start-1 col-start-3 " loading="eager">
+
+                <img src="./resources-for-web/image 6.jpg" alt="road"
+                    class="h-[400px] w-[223px] rounded-[20px] row-start-1 col-start-4 " loading="eager">
+
+                <!-- div holding passion quotes -->
+                <div class="bg-black h-[200px] w-[260px] rounded-[20px] "></div>
+            </div>
+
+        </div>
+
+
     </section>
 
 
@@ -516,83 +596,104 @@ and backend optimization. Skilled in Java, Dart, PHP, and Python, with hands-on 
             <div class="relative pt-[30px]">
                 <h4 class="font-kOne relative z-10 lg:text-[36px] sm:text-[23px] md:text-[36px]
                             ">TESTIMONIALS</h4>
-                <div class="absolute bg-[#FEF200] h-[16px] lg:w-[350px] md:w-[230px] sm:w-[225px] bottom-1 left-0 z-0 "></div>
+                <div class="absolute bg-[#FEF200] h-[16px] lg:w-[350px] md:w-[230px] sm:w-[225px] bottom-1 left-0 z-0 ">
+                </div>
             </div>
-        
+
             <p class="font-kufam pt-[20px]
             sm:text-[15px] 
             md:text-[18px] 
             lg:text-[18px]">
-            Don't just take my word for it—see what my clients and collaborators have to say! Here are some testimonials from those I've worked with, sharing their experiences and insights.</p>
+                Don't just take my word for it—see what my clients and collaborators have to say! Here are some
+                testimonials from those I've worked with, sharing their experiences and insights.</p>
         </div>
 
 
         <!-- this will act as a parent div holding the testimonial -->
         <div class="flex flex-row justify-center">
 
-            <div class="relative pt-[30px] bg-[#B5B1B1] h-[300px] w-[350px] rounded-[20px] md:h-[300px] sm:h-[400px]  sm:m-[30px] ">
-                <span><img src="./resources-for-web/double-quotes.svg" alt="double-quotes" class="h-[70px] p-[1px]"></span>
-                <p class="p-[8px] font-kufam text-[15px]">Working with Saif has been a privilege. His editorial skills, keen eye for detail, and storytelling expertise make him an invaluable asset. He refines content without losing its essence and brings a passion for words that elevates every piece he touches.</p>
-                <div class="absolute bg-[#D9D9D9] h-[55px] lg:w-[200px] rounded-[20px] bottom-[-5px] lg:left-[170px] z-0 sm:left-[80px]  sm:w-[160px] ph:left-[180px] ph:w-[200px] mph:left-[120px] mph:w-[200px] me:left-[95px] me:w-[170px] mphn:left-[95px] mphn:w-[180px]"></div>
-                
-                <div class="flex items-center flex-col absolute bg-black h-[47px] lg:w-[176px] rounded-[20px] bottom-[-1px] lg:left-[175px] z-0 sm:left-[85px] sm:w-[145px] md:left-[185px] md:w-[165px] ph:left-[185px] ph:w-[156px] mph:left-[125px] mph:w-[158px] me:left-[100px] mphn:w-[165px]">
+            <div
+                class="relative pt-[30px] bg-[#B5B1B1] h-[300px] w-[350px] rounded-[20px] md:h-[300px] sm:h-[400px]  sm:m-[30px] ">
+                <span><img src="./resources-for-web/double-quotes.svg" alt="double-quotes"
+                        class="h-[70px] p-[1px]"></span>
+                <p class="p-[8px] font-kufam text-[15px]">Working with Saif has been a privilege. His editorial skills,
+                    keen eye for detail, and storytelling expertise make him an invaluable asset. He refines content
+                    without losing its essence and brings a passion for words that elevates every piece he touches.</p>
+                <div
+                    class="absolute bg-[#D9D9D9] h-[55px] lg:w-[200px] rounded-[20px] bottom-[-5px] lg:left-[170px] z-0 sm:left-[80px]  sm:w-[160px] ph:left-[180px] ph:w-[200px] mph:left-[120px] mph:w-[200px] me:left-[95px] me:w-[170px] mphn:left-[95px] mphn:w-[180px]">
+                </div>
+
+                <div
+                    class="flex items-center flex-col absolute bg-black h-[47px] lg:w-[176px] rounded-[20px] bottom-[-1px] lg:left-[175px] z-0 sm:left-[85px] sm:w-[145px] md:left-[185px] md:w-[165px] ph:left-[185px] ph:w-[156px] mph:left-[125px] mph:w-[158px] me:left-[100px] mphn:w-[165px]">
                     <h5 class="text-[#B5B1B1] font-kufam pt-[5px]">JESTIN MARTIN</h5>
                     <a href="https://www.instagram.com/jestin._.martin/" target="_blank">
                         <p class="text-[#B5B1B1] font-kufam text-[11px]">@jestin._.martin</p>
                     </a>
                 </div>
 
-            </div>  
+            </div>
 
         </div>
     </section>
 
 
 
-    <section id="about-section" class=" flex flex-col pt-[200px] m-4  rounded-lg  bg-[#161515] lg:h-[760px] sm:pt-[250px] sm:h-[700px] md:h-[760px] overflow-hidden">
+    <section id="about-section"
+        class=" flex flex-col pt-[200px] m-4  rounded-lg  bg-[#161515] lg:h-[760px] sm:pt-[250px] sm:h-[700px] md:h-[760px] overflow-hidden">
         <!-- this div will hold all the content within the section acting as a container -->
         <div class="flex items-center flex-col">
             <h2 class="text-[#B5B1B1] font-abel lg:text-[30px] sm:text-[20px] md:text-[30px]">THATS ALL FOLKS</h2>
             <h2 class="text-[#B5B1B1] font-gob lg:text-[50px] md:text-[40px] sm:text-[15px]">WANNA GET IN TOUCH?</h2>
 
-            <form class="pt-[20px] flex gap-[20px] flex-col justify-center items-center" action="https://formsubmit.co/saifmkpvt@gmail.com" method="post">
-                <input type="text" name="query" class="placeholder-[#1E1E1E] bg-primary placeholder:font-abel lg:w-[300px] lg:h-[40px] md:w-[300px] md:h-[40px] sm:h-[30px] rounded-lg " placeholder="QUERIES">
-                <input type="email" name="email" class="placeholder-[#1E1E1E]  bg-primary placeholder:font-abel lg:w-[300px] lg:h-[40px] md:w-[300px] md:h-[40px] sm:h-[30px] rounded-lg " placeholder="EMAIL ID">
-                
+            <form class="pt-[20px] flex gap-[20px] flex-col justify-center items-center"
+                action="https://formsubmit.co/saifmkpvt@gmail.com" method="post">
+                <input type="text" name="query"
+                    class="placeholder-[#1E1E1E] bg-primary placeholder:font-abel lg:w-[300px] lg:h-[40px] md:w-[300px] md:h-[40px] sm:h-[30px] rounded-lg "
+                    placeholder="QUERIES">
+                <input type="email" name="email"
+                    class="placeholder-[#1E1E1E]  bg-primary placeholder:font-abel lg:w-[300px] lg:h-[40px] md:w-[300px] md:h-[40px] sm:h-[30px] rounded-lg "
+                    placeholder="EMAIL ID">
+
                 <!-- input field used to  -->
                 <input type="hidden" name="_next" value="https://saifmk10.github.io/saif-s-portfolio/">
                 <input type="hidden" name="_captcha" value="false">
-                
+
                 <button type="submit" class="bg-[#B5B1B1] w-[100px] lg:h-[30px] rounded-lg font-abel">SUBMIT</button>
             </form>
         </div>
 
-        
+
 
         <!-- this div will hold all the social links  -->
-        <div class="flex gap-[30px] items-center justify-center md:pt-[100px] lg:pt-[165px] sm:gap-[20px] sm:pt-[200px]">
+        <div
+            class="flex gap-[30px] items-center justify-center md:pt-[100px] lg:pt-[165px] sm:gap-[20px] sm:pt-[200px]">
 
-            <a href="mailto:Saifmkpvt@gmail.com"  target="_blank">
-                <img src="./resources-for-web/email-logo-footer.svg" alt="email-logo-white" class=" md lg:h-[45px] w-auto sm:h-8">
+            <a href="mailto:Saifmkpvt@gmail.com" target="_blank">
+                <img src="./resources-for-web/email-logo-footer.svg" alt="email-logo-white"
+                    class=" md lg:h-[45px] w-auto sm:h-8">
             </a>
 
-            <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/"  target="_blank">
-                <img src="./resources-for-web/linkedin-logo-footer.svg" alt="linkedin-logo-white" class=" md lg:h-[45px] w-auto sm:h-8">
+            <a href="https://www.linkedin.com/in/saif-mohamed-9ab7302b0/" target="_blank">
+                <img src="./resources-for-web/linkedin-logo-footer.svg" alt="linkedin-logo-white"
+                    class=" md lg:h-[45px] w-auto sm:h-8">
             </a>
 
-            <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19"  target="_blank">
-                <img src="./resources-for-web/github-footer.png" alt="github-logo-white" class=" md lg:h-[45px] w-auto sm:h-8">
+            <a href="https://github.com/Saifmk10?tab=overview&from=2024-11-01&to=2024-11-19" target="_blank">
+                <img src="./resources-for-web/github-footer.png" alt="github-logo-white"
+                    class=" md lg:h-[45px] w-auto sm:h-8">
             </a>
 
             <a href="https://www.instagram.com/saifmk10/" target="_blank">
-                <img src="./resources-for-web/instagram-logo-footer.svg" alt="instagram-logo-white" class=" md lg:h-[45px] w-auto sm:h-8">
+                <img src="./resources-for-web/instagram-logo-footer.svg" alt="instagram-logo-white"
+                    class=" md lg:h-[45px] w-auto sm:h-8">
             </a>
-            
+
         </div>
     </section>
 
 
     <script src="./text-animation.js"></script>
-    
+
 </body>
-</html>  
+
+</html>
