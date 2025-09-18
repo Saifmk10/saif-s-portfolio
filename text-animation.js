@@ -203,13 +203,16 @@ setInterval(loadingAnimationCardTwo , 7000);
 
 
 // function for copying the email id from the header.
-let copyButton = document.getElementById("copy_button");
+const copyButton = document.getElementById("copy_button");
 
-function copyToClickBoard(){
-    navigator.clipboard.writeText("saifmkpvt@gmail.com");
-    console.log(copyButton);
-    copyButton.innerText = "Copied";
-}
+copyButton.addEventListener("click", () => {
+    navigator.clipboard.writeText("saifmkpvt@gmail.com")
+        .then(() => {
+            copyButton.innerText = "Copied";
+            alert("Email copied");
+        })
+        .catch(err => console.error(err));
+});
 
 
 // trigger for the project section (will open up the projects detail)
