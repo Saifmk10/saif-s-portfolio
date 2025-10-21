@@ -780,9 +780,6 @@
   .text-\[23px\] {
     font-size: 23px;
   }
-  .text-\[30px\] {
-    font-size: 30px;
-  }
   .text-\[34px\] {
     font-size: 34px;
   }
@@ -818,11 +815,6 @@
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-\[height\] {
     transition-property: height;
@@ -1503,11 +1495,6 @@
       font-size: 40px;
     }
   }
-  .md\:text-\[10pxpx\] {
-    @media (width >= 640px) {
-      color: 10pxpx;
-    }
-  }
   .lg\:left-\[170px\] {
     @media (width >= 1024px) {
       left: 170px;
@@ -1698,11 +1685,6 @@
       padding: 3px;
     }
   }
-  .lg\:p-\[5px\] {
-    @media (width >= 1024px) {
-      padding: 5px;
-    }
-  }
   .lg\:p-\[30px\] {
     @media (width >= 1024px) {
       padding: 30px;
@@ -1870,7 +1852,7 @@
   }
 }
 @keyframes typing {
-  0% {
+  15% {
     width: 0%;
   }
   50% {

@@ -127,7 +127,7 @@
 
 /* keyframes for the typing animation */    
 @keyframes typing{
-    0% {
+    15% {
         width: 0%;
     }
     50% {
