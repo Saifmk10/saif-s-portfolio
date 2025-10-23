@@ -306,9 +306,6 @@
   .m-\[30px\] {
     margin: 30px;
   }
-  .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -417,9 +414,6 @@
   .h-full {
     height: 100%;
   }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
-  }
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
@@ -501,26 +495,14 @@
   .grid-cols-\[200px_200px_200px_200px\] {
     grid-template-columns: 200px 200px 200px 200px;
   }
-  .grid-cols-\[auto\] {
-    grid-template-columns: auto;
-  }
-  .grid-cols-\[repeat\(auto-fit\,min-content\)\] {
-    grid-template-columns: repeat(auto-fit,min-content);
-  }
   .grid-rows-\[200px_400px_200px\] {
     grid-template-rows: 200px 400px 200px;
-  }
-  .grid-rows-\[repeat\(auto-fit\,min-content\)\] {
-    grid-template-rows: repeat(auto-fit,min-content);
   }
   .flex-col {
     flex-direction: column;
   }
   .flex-row {
     flex-direction: row;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -534,9 +516,6 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
-  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -545,12 +524,6 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
-  }
-  .gap-\[-100\] {
-    gap: -100;
-  }
-  .gap-\[-100px\] {
-    gap: -100px;
   }
   .gap-\[20px\] {
     gap: 20px;
@@ -713,9 +686,6 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
-  .pt-5 {
-    padding-top: calc(var(--spacing) * 5);
-  }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
   }
@@ -828,6 +798,9 @@
   .text-blue-500 {
     color: var(--color-blue-500);
   }
+  .text-primary {
+    color: var(--color-primary);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -856,9 +829,22 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
   .duration-400 {
     --tw-duration: 400ms;
     transition-duration: 400ms;
+  }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
   }
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
@@ -867,6 +853,28 @@
   .placeholder\:font-abel {
     &::placeholder {
       font-family: var(--font-abel);
+    }
+  }
+  .hover\:bg-black {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-black);
+      }
+    }
+  }
+  .hover\:text-primary {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-primary);
+      }
+    }
+  }
+  .hover\:ease-in-out {
+    &:hover {
+      @media (hover: hover) {
+        --tw-ease: var(--ease-in-out);
+        transition-timing-function: var(--ease-in-out);
+      }
     }
   }
   .sm\:left-\[80px\] {
@@ -1172,11 +1180,6 @@
   .sm\:pt-0 {
     @media (width >= 320px) {
       padding-top: calc(var(--spacing) * 0);
-    }
-  }
-  .sm\:pt-10 {
-    @media (width >= 320px) {
-      padding-top: calc(var(--spacing) * 10);
     }
   }
   .sm\:pt-\[3px\] {
@@ -1695,19 +1698,9 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
-  .lg\:grid-cols-\[repeat\(auto-fit\,minmax\(10px\,auto\)\)\] {
-    @media (width >= 1024px) {
-      grid-template-columns: repeat(auto-fit,minmax(10px,auto));
-    }
-  }
   .lg\:grid-cols-\[repeat\(auto-fit\,minmax\(100px\,3fr\)\)\] {
     @media (width >= 1024px) {
       grid-template-columns: repeat(auto-fit,minmax(100px,3fr));
-    }
-  }
-  .lg\:grid-cols-\[repeat\(auto-fit\,minmax\(100px\,auto\)\)\] {
-    @media (width >= 1024px) {
-      grid-template-columns: repeat(auto-fit,minmax(100px,auto));
     }
   }
   .lg\:gap-2 {
@@ -1743,11 +1736,6 @@
   .lg\:p-\[100px\] {
     @media (width >= 1024px) {
       padding: 100px;
-    }
-  }
-  .lg\:pt-5 {
-    @media (width >= 1024px) {
-      padding-top: calc(var(--spacing) * 5);
     }
   }
   .lg\:pt-\[0px\] {
