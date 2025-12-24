@@ -15,15 +15,33 @@
 
     </script>
 
+    <!-- xmas snow fall -->
+    <script src="https://cdn.jsdelivr.net/gh/scottschiller/snowstorm/snowstorm-min.js"></script>
+    <script>
+        snowStorm.excludeMobile = true;
+        snowStorm.flakesMax = 120;
+        snowStorm.flakesMaxActive = 60;
+        snowStorm.snowColor = "#fff";
+        snowStorm.useTwinkleEffect = true;
+        snowStorm.snowCharacter = '❄'
+        snowStorm.snowStick = true;
+        snowStorm.usePositionFixed = true;
+
+    </script>
+
+
+    <!-- scroll animation -->
+    
+    
 
     <!-- <link rel="stylesheet" href="custom.css"> -->
     <link rel="stylesheet" href="./output.css">
     <link rel="icon" type="image/svg+xml" href="./resources-for-web/profile-image.svg">
 
-    
+
 </head>
 
-<body>
+<body class="">
 
 
     <!-- this is the parent section for the home page that is holding the elements shown when the website opens up -->
@@ -39,12 +57,14 @@
                 <h3 class="p-[10px] font-isf font-isf-weight  text-[15px]" id="email_to_copy">
                     Saifmkpvt@gmail.com
                 </h3>
-                <button class="bg-buttons p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight transition-all duration-500 ease-in-out hover:bg-black hover:text-primary"
-                     id="copy_button">
+                <button
+                    class="bg-buttons p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight transition-all duration-500 ease-in-out hover:bg-black hover:text-primary"
+                    id="copy_button">
                     Copy
                 </button>
                 <a href="./resources-for-web/Saif Mohamed K.pdf" target="_blank">
-                    <button class="bg-buttons p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight transition-all duration-500 ease-in-out hover:bg-black hover:text-primary ">
+                    <button
+                        class="bg-buttons p-[8px] w-[70px] rounded-[75px] font-isf font-isf-weight transition-all duration-500 ease-in-out hover:bg-black hover:text-primary ">
                         CV
                     </button>
                 </a>
@@ -172,7 +192,7 @@
     <!-- section holding the about us and tech stack used -->
     <!-- The tech stack needs to be designed in such a way that it can be modified later -->
     <section id="about-section"
-        class="lg:h-home-parent-container  m-4 mb-0 rounded-lg  bg-primary sm:h-[1000px] overflow-hidden">
+        class="lg:h-home-parent-container  m-4 mb-0 rounded-lg  bg-primary sm:h-[1000px] overflow-hidden" >
 
         <!-- div acts as a parent for the content that has been added in this section-->
         <div class="p-[100px]
@@ -337,40 +357,84 @@
 
 
             <!-- -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=================================================== -->
-            <!-- content about investo will be added here (responsive) -->
-            <a href="./case_study.html" target="_blank" rel="noopener noreferrer">
+
+            <!--  (saathi agentic ai) -->
+            <a href="./saathi.html" target="_blank" rel="noopener noreferrer">
                 <div class="relative bg-[#B5B1B1] rounded-[20px] overflow-hidden
+                        lg:h-[270px] lg:w-[360px] 
+                        sm:w-auto sm:h-[250px] sm:mt-[20px]
+                        md:h-[270px] md:w-[360px]
+                        images-parent">
+
+
+                    <div class="flex justify-center bg-[#0073E6] rounded-t-[20px]
+                    lg:h-[160px]
+                    sm:h-[150px] sm:rounded-tr-[20px] sm:rounded-tl-[20px]
+                    ">
+                        <!-- custom class has been used for scaling animation -->
+                        <img src="./resources-for-web/saathi_project/saathi_main_screen.svg" alt="project-cover"
+                            class="h-[160px] w-auto image-scaling">
+                    </div>
+
+
+                    <!-- </div> -->
+
+                    <div class="div-blur">
+                        <h2 class="pt-[5px] pl-[20px] font-itim text-[23px]">SAATHI</h2>
+                        <p class="pl-[20px] ">Agentic AI</p>
+
+                        <!-- tech stack images div -->
+                        <div class="flex p-[10px] ">
+                            <img src="https://img.shields.io/badge/huggingface-FFD21E.svg?style=for-the-badge&logo=huggingface&logoColor=black"
+                                alt=""
+                                class="rounded-[20px] w-[100px] sm:h-[20px] sm:w-[100px] md:h-[30px]  lg:h-[30px] ">
+                            <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                                alt="" class="rounded-[30px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                            <img src="https://img.shields.io/badge/python-3776AB.svg?style=for-the-badge&logo=python&logoColor=white"
+                                alt="" class="rounded-[20px] pl-[5px] w-[100px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
+                        </div>
+                    </div>
+
+                </div> <!-- end of the third project card -->
+            </a>
+
+
+
+
+            <!-- content about investo will be added here (responsive) -->
+            <!-- <a href="./case_study.html" target="_blank" rel="noopener noreferrer"> -->
+            <div class="relative bg-[#B5B1B1] rounded-[20px] overflow-hidden
                         lg:h-[270px] lg:w-[360px] 
                         sm:w-auto sm:h-[250px] sm:mt-[20px]
                         md:h-[270px] md:w-[360px]
                         images-parent" id="blur-on-click">
 
-                    <div class="flex justify-center bg-gradient-to-r from-[#673abf] to-[#552189] rounded-t-[20px]
+                <div class="flex justify-center bg-gradient-to-r from-[#673abf] to-[#552189] rounded-t-[20px]
                 lg:h-[160px]
                 sm:h-[150px] sm:rounded-tr-[20px] sm:rounded-tl-[20px]
                 ">
-                        <!-- custom class has been used for scaling animation -->
-                        <img src="./resources-for-web/investo-cover-new.png" alt="project-cover"
-                            class="h-[160px] w-auto image-scaling">
-                    </div>
+                    <!-- custom class has been used for scaling animation -->
+                    <img src="./resources-for-web/investo-cover-new.png" alt="project-cover"
+                        class="h-[160px] w-auto image-scaling">
+                </div>
 
-                    <!-- div-blur holding the name and the techstack with the hover animation -->
-                    <div class="div-blur">
-                        <h2 class="pt-[5px] pl-[20px] font-itim text-[23px] ">INVESTO</h2>
-                        <p class="pl-[20px] ">Full-stack development</p>
+                <!-- div-blur holding the name and the techstack with the hover animation -->
+                <div class="div-blur">
+                    <h2 class="pt-[5px] pl-[20px] font-itim text-[23px] ">INVESTO</h2>
+                    <p class="pl-[20px] ">Android App Development</p>
 
-                        <!-- tech stack images div -->
-                        <div class="flex p-[10px]">
+                    <!-- tech stack images div -->
+                    <!-- <div class="flex p-[10px]">
                             <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
                                 alt="" class="rounded-[20px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
                             <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
                                 alt="" class="rounded-[30px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
                             <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white"
                                 alt="" class="rounded-[20px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
-                        </div>
-                    </div>
-                </div> <!-- end of the main project card -->
-            </a>
+                        </div> -->
+                </div>
+            </div> <!-- end of the main project card -->
+            <!-- </a> -->
 
             <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
@@ -414,45 +478,7 @@
             <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
-            <!-- third project card (saathi agentic ai) -->
-            <a href="./saathi.html" target="_blank" rel="noopener noreferrer">
-                <div class="relative bg-[#B5B1B1] rounded-[20px] overflow-hidden
-                        lg:h-[270px] lg:w-[360px] 
-                        sm:w-auto sm:h-[250px] sm:mt-[20px]
-                        md:h-[270px] md:w-[360px]
-                        images-parent">
 
-
-                    <div class="flex justify-center bg-[#0073E6] rounded-t-[20px]
-                    lg:h-[160px]
-                    sm:h-[150px] sm:rounded-tr-[20px] sm:rounded-tl-[20px]
-                    ">
-                        <!-- custom class has been used for scaling animation -->
-                        <img src="./resources-for-web/saathi_project/saathi_main_screen.svg" alt="project-cover"
-                            class="h-[160px] w-auto image-scaling">
-                    </div>
-
-
-                    <!-- </div> -->
-
-                    <div class="div-blur">
-                        <h2 class="pt-[5px] pl-[20px] font-itim text-[23px]">SAATHI</h2>
-                        <p class="pl-[20px] ">Agentic AI</p>
-
-                        <!-- tech stack images div -->
-                        <div class="flex p-[10px] ">
-                            <img src="https://img.shields.io/badge/huggingface-FFD21E.svg?style=for-the-badge&logo=huggingface&logoColor=black"
-                                alt=""
-                                class="rounded-[20px] w-[100px] sm:h-[20px] sm:w-[100px] md:h-[30px]  lg:h-[30px] ">
-                            <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-                                alt="" class="rounded-[30px] pl-[5px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
-                            <img src="https://img.shields.io/badge/python-3776AB.svg?style=for-the-badge&logo=python&logoColor=white"
-                                alt="" class="rounded-[20px] pl-[5px] w-[100px] sm:h-[20px] md:h-[30px] lg:h-[30px]">
-                        </div>
-                    </div>
-
-                </div> <!-- end of the third project card -->
-            </a>
 
 
         </div> <!-- end of the parent container that is holding the project cards -->
@@ -489,7 +515,7 @@
         <div class="flex justify-center">
             <!-- this div will hold the image for the passsion section -->
             <!-- this code bellow is for the layout in lg screen size -->
-             
+
             <div
                 class="lg:grid pt-16 grid-cols-[200px_200px_200px_200px] grid-rows-[200px_400px_200px] gap-2 sm:hidden md:hidden">
                 <img src="./resources-for-web/image 7.jpg" alt="hill landscape"
@@ -560,10 +586,10 @@
                 <div class="bg-black h-[200px] w-[260px] rounded-[20px] "></div>
             </div>
 
-            
+
         </div>
 
-        
+
 
 
     </section>
@@ -680,7 +706,7 @@
 
     <script src="./text-animation.js"></script>
 
-    
+
 
 </body>
 

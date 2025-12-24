@@ -1,11 +1,20 @@
 {
 
   "scripts": {
-    "build:css" : "npx @tailwindcss/cli -i D:\\PROJECTS\\Portfolio\\saif-s-portfolio\\input.css  -o D:\\PROJECTS\\Portfolio\\saif-s-portfolio\\output.css --watch"
+
+    "build:css": "npx @tailwindcss/cli -i D:\\PROJECTS\\Portfolio\\saif-s-portfolio\\input.css  -o D:\\PROJECTS\\Portfolio\\saif-s-portfolio\\output.css --watch"
+
   },
 
   "dependencies": {
+
     "@tailwindcss/cli": "^4.1.10",
+
+    "react-snowfall": "^2.4.0",
+
     "tailwindcss": "^4.1.10"
+
   }
+
 }
+
