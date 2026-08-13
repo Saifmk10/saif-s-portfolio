@@ -255,6 +255,13 @@
         border: 1px solid rgba(244, 114, 182, 0.18);
         border-radius: 24px;
         box-shadow: 0 18px 35px rgba(244, 114, 182, 0.14);
+        cursor: pointer;
+        overflow: hidden;
+        animation: shake 1.8s ease-in-out infinite alternate;
+      }
+
+      .gift-box.opened {
+        animation: none;
       }
 
       .gift-box::before,
@@ -282,6 +289,73 @@
         border-radius: 12px;
       }
 
+      .confetti-wrapper {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+      }
+
+      .confetti {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        opacity: 0.95;
+        animation: confetti-fall 1.8s linear infinite;
+      }
+
+      .confetti-1 {
+        left: 18%;
+        top: 8%;
+        animation-delay: 0s;
+        background: #f472b6;
+      }
+
+      .confetti-2 {
+        left: 42%;
+        top: 4%;
+        animation-delay: 0.14s;
+        background: #fb7185;
+        transform: scale(0.85);
+      }
+
+      .confetti-3 {
+        left: 60%;
+        top: 12%;
+        animation-delay: 0.28s;
+        background: #fbcfe8;
+        transform: scale(1.1);
+      }
+
+      .confetti-4 {
+        left: 76%;
+        top: 6%;
+        animation-delay: 0.08s;
+        background: #fde68a;
+        transform: scale(0.9);
+      }
+
+      .confetti-5 {
+        left: 28%;
+        top: 10%;
+        animation-delay: 0.35s;
+        background: #f9a8d4;
+        transform: scale(1.2);
+      }
+
+      .confetti-6 {
+        left: 84%;
+        top: 3%;
+        animation-delay: 0.48s;
+        background: #f4c6da;
+        transform: scale(0.75);
+      }
+
+      .gift-box.opened .confetti {
+        animation-play-state: paused;
+        opacity: 0;
+      }
+
       .gift-ribbon {
         position: absolute;
         inset: 0;
@@ -289,6 +363,113 @@
         place-items: center;
         font-size: 3rem;
         color: rgba(244, 114, 182, 0.75);
+      }
+
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(20, 15, 40, 0.65);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 18px;
+        z-index: 50;
+      }
+
+      .modal-overlay.show {
+        display: flex;
+      }
+
+      .modal {
+        width: min(100%, 420px);
+        max-height: 80vh;
+        overflow-y: auto;
+        background: rgba(255, 255, 255, 0.97);
+        border-radius: 28px;
+        padding: 38px 24px 28px;
+        box-shadow: 0 30px 80px rgba(15, 10, 30, 0.24);
+        text-align: center;
+        position: relative;
+      }
+
+      /* Elegant scrollbar style for the modal */
+      .modal::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      .modal::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      .modal::-webkit-scrollbar-thumb {
+        background-color: var(--pink-1);
+        border-radius: 10px;
+      }
+
+      .modal h3 {
+        margin: 12px 0 12px;
+        font-size: 1.8rem;
+        color: var(--text);
+      }
+
+      .modal p {
+        margin: 0 0 22px;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .close-button {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 38px;
+        height: 38px;
+        border: none;
+        border-radius: 50%;
+        background: rgba(244, 114, 182, 0.16);
+        color: var(--text);
+        font-size: 1.35rem;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      .modal-button {
+        border: none;
+        background: linear-gradient(135deg, var(--pink-1), var(--pink-2));
+        color: #fff;
+        border-radius: 14px;
+        padding: 12px 22px;
+        cursor: pointer;
+        font-size: 0.95rem;
+        font-weight: 700;
+      }
+
+      .modal-actions {
+        display: flex;
+        justify-content: center;
+      }
+
+      @keyframes shake {
+        from {
+          transform: translateX(-2px) rotate(-1deg);
+        }
+        to {
+          transform: translateX(2px) rotate(1deg);
+        }
+      }
+
+      @keyframes confetti-fall {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+        }
+        30% {
+          opacity: 0.95;
+        }
+        100% {
+          transform: translateY(260px) rotate(360deg);
+          opacity: 0;
+        }
       }
 
       .message {
@@ -332,7 +513,7 @@
     <section id="login-card" class="login-shell" aria-live="polite">
       <div class="brand">
         <span class="brand-mark" aria-hidden="true"></span>
-        <span>Birthday surprise</span>
+        <!-- <span>Birthday surprise</span> -->
       </div>
 
       <div class="welcome">
@@ -343,12 +524,12 @@
       <form id="loginForm">
         <div class="field">
           <label for="username">Username</label>
-          <input id="username" name="username" type="text" placeholder="aysha" autocomplete="username" />
+          <input id="username" name="username" type="text" placeholder="Username" autocomplete="username" />
         </div>
 
         <div class="field">
           <label for="password">Password</label>
-          <input id="password" name="password" type="password" placeholder="2026" autocomplete="current-password" />
+          <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" />
         </div>
 
         <button type="submit">Unlock surprise</button>
@@ -360,13 +541,20 @@
       <div class="surprise-header">
         <h2>Happy Birthday, Aysha!</h2>
         <p>
-          You are the kind of person who makes everything feel softer, brighter, and more beautiful.
-          May this new year bring you endless smiles, sweet memories, and all the love you deserve.
+         ആയിഷാ, ഒടുവിൽ നിനക്ക് 19 വയസ്സ് തികയുകയാണ്. നീ സ്നേഹിക്കുകയും കരുതുകയും ചെയ്യുന്നവർക്കെല്ലാം സന്തോഷവും പ്രകാശവും പകർന്നുനൽകിക്കൊണ്ട് നീ ഈ ലോകത്തേക്ക് കടന്നുവന്ന ഈ ദിവസം വളരെ സവിശേഷമാണ്. ഇതെല്ലാം നിന്നെ സന്തോഷിപ്പിക്കുമോ എന്നോ, എന്താണ് നിന്നെ യഥാർത്ഥത്തിൽ സന്തോഷിപ്പിക്കുക എന്നോ എനിക്കറിയില്ല; എങ്കിലും, നിനക്കായി എൻ്റെ കൈവശം ഒരു പ്രത്യേക സമ്മാനമുണ്ട്.
         </p>
       </div>
 
-      <div class="gift-box" aria-hidden="true">
+      <div class="gift-box" aria-hidden="true" id="giftBox" role="button" tabindex="0" aria-label="Open birthday gift">
         <div class="gift-ribbon">✦</div>
+        <div class="confetti-wrapper" aria-hidden="true">
+          <span class="confetti confetti-1"></span>
+          <span class="confetti confetti-2"></span>
+          <span class="confetti confetti-3"></span>
+          <span class="confetti confetti-4"></span>
+          <span class="confetti confetti-5"></span>
+          <span class="confetti confetti-6"></span>
+        </div>
       </div>
 
       <div class="message">
@@ -374,6 +562,17 @@
         and your life bloom with joy, peace, and beautiful surprises every single day.
         <br /><br />
         You are deeply loved, endlessly cherished, and truly unforgettable. 💖
+      </div>
+      
+      <div class="modal-overlay" id="giftModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+        <div class="modal">
+          <button class="close-button" id="closeModal" aria-label="Close gift modal">×</button>
+          <h3 id="modalTitle">Your Special Surprise</h3>
+          <p id="modalDescription">The gift is opening! Enjoy this sweet message made just for you. Click below to close it when you're ready.</p>
+          <div class="modal-actions">
+            <button class="modal-button" id="closeModalAction">Close</button>
+          </div>
+        </div>
       </div>
 
       <div class="footer-note">Forever yours, always.</div>
@@ -405,6 +604,35 @@
 
         errorMessage.textContent = 'Oops! That login does not match. Try again.';
         usernameInput.focus();
+      });
+
+      const giftBox = document.getElementById('giftBox');
+      const giftModal = document.getElementById('giftModal');
+      const closeModal = document.getElementById('closeModal');
+      const closeModalAction = document.getElementById('closeModalAction');
+
+      function openGiftModal() {
+        giftBox.classList.add('opened');
+        giftModal.classList.add('show');
+      }
+
+      function closeGiftModal() {
+        giftModal.classList.remove('show');
+      }
+
+      giftBox.addEventListener('click', openGiftModal);
+      giftBox.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openGiftModal();
+        }
+      });
+      closeModal.addEventListener('click', closeGiftModal);
+      closeModalAction.addEventListener('click', closeGiftModal);
+      giftModal.addEventListener('click', function (event) {
+        if (event.target === giftModal) {
+          closeGiftModal();
+        }
       });
     </script>
   </body>
