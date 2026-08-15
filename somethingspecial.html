@@ -368,11 +368,11 @@
       .modal-overlay {
         position: fixed;
         inset: 0;
-        background: rgba(20, 15, 40, 0.65);
+        background: rgba(18, 12, 25, 0.72);
         display: none;
         align-items: center;
         justify-content: center;
-        padding: 18px;
+        padding: 20px;
         z-index: 50;
       }
 
@@ -380,42 +380,193 @@
         display: flex;
       }
 
-      .modal {
-        width: min(100%, 420px);
-        max-height: 80vh;
+      .gallery-screen {
+        width: min(100%, 980px);
+        max-height: 90vh;
         overflow-y: auto;
-        background: rgba(255, 255, 255, 0.97);
-        border-radius: 28px;
-        padding: 38px 24px 28px;
-        box-shadow: 0 30px 80px rgba(15, 10, 30, 0.24);
-        text-align: center;
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid rgba(244, 114, 182, 0.12);
+        border-radius: 30px;
+        box-shadow: 0 28px 80px rgba(18, 12, 25, 0.2);
         position: relative;
+        padding: 28px 22px 24px;
       }
 
-      /* Elegant scrollbar style for the modal */
-      .modal::-webkit-scrollbar {
-        width: 6px;
+      .gallery-screen::-webkit-scrollbar {
+        width: 8px;
       }
 
-      .modal::-webkit-scrollbar-track {
-        background: transparent;
-      }
-
-      .modal::-webkit-scrollbar-thumb {
-        background-color: var(--pink-1);
+      .gallery-screen::-webkit-scrollbar-track {
+        background: rgba(244, 114, 182, 0.08);
         border-radius: 10px;
       }
 
-      .modal h3 {
-        margin: 12px 0 12px;
-        font-size: 1.8rem;
+      .gallery-screen::-webkit-scrollbar-thumb {
+        background: rgba(244, 114, 182, 0.55);
+        border-radius: 10px;
+      }
+
+      .gallery-header {
+        text-align: center;
+        margin-bottom: 22px;
+      }
+
+      .gallery-header p {
+        margin: 0;
+        font-size: 0.72rem;
+        letter-spacing: 0.18rem;
+        color: var(--muted);
+        text-transform: uppercase;
+      }
+
+      .gallery-header h3 {
+        margin: 10px 0 0;
+        font-size: clamp(2rem, 4vw, 3rem);
         color: var(--text);
       }
 
-      .modal p {
-        margin: 0 0 22px;
-        color: var(--muted);
-        line-height: 1.7;
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .present-card {
+        position: relative;
+        min-height: 260px;
+        border-radius: 22px;
+        overflow: hidden;
+        cursor: pointer;
+        background: linear-gradient(135deg, #fff7fb, #fdf2f8);
+        border: 1px solid rgba(244, 114, 182, 0.12);
+        box-shadow: 0 12px 30px rgba(244, 114, 182, 0.08);
+      }
+
+      .present-card.video-card {
+        grid-column: 1 / -1;
+      }
+
+      .gift-lid,
+      .gift-body {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+      }
+
+      .gift-lid {
+        inset: 0 0 auto 0;
+        height: 42%;
+        background: linear-gradient(135deg, #f9a8d4, #f472b6);
+        border-radius: 22px 22px 18px 18px;
+        box-shadow: inset 0 -12px 0 rgba(255, 255, 255, 0.18);
+        z-index: 3;
+        transition: transform 0.8s ease, opacity 0.5s ease;
+      }
+
+      .gift-lid::before,
+      .gift-lid::after,
+      .gift-body::before,
+      .gift-body::after {
+        content: "";
+        position: absolute;
+        background: rgba(255, 255, 255, 0.75);
+      }
+
+      .gift-lid::before {
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        width: 12px;
+        height: 100%;
+        border-radius: 999px;
+      }
+
+      .gift-lid::after {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 12px;
+        border-radius: 999px;
+      }
+
+      .gift-body {
+        inset: 34% 0 0 0;
+        background: linear-gradient(135deg, #fbcfe8, #f9a8d4);
+        border-radius: 18px;
+        box-shadow: inset 0 12px 0 rgba(255, 255, 255, 0.18);
+        z-index: 2;
+        transition: transform 0.8s ease, opacity 0.6s ease;
+      }
+
+      .gift-body::before {
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        width: 12px;
+        height: 100%;
+        border-radius: 999px;
+      }
+
+      .gift-body::after {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 12px;
+        border-radius: 999px;
+      }
+
+      .gift-content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transform: translateY(26px) scale(0.97);
+        transition: opacity 0.6s ease, transform 0.8s ease;
+      }
+
+      .present-card.open .gift-lid {
+        transform: translateY(120%) rotateX(80deg);
+        opacity: 0;
+      }
+
+      .present-card.open .gift-body {
+        animation: wrapper-fall 0.8s ease forwards;
+      }
+
+      .present-card.open .gift-content {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      @keyframes wrapper-fall {
+        0% {
+          transform: translateY(0) scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(48px) scale(0.96);
+          opacity: 0;
+        }
+      }
+
+      .media-card {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(135deg, #fff7fb, #fdf2f8);
+        border-radius: 22px;
+        overflow: hidden;
+        box-shadow: 0 12px 30px rgba(244, 114, 182, 0.08);
+      }
+
+      .media-card img,
+      .media-card video {
+        display: block;
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
       }
 
       .close-button {
@@ -447,6 +598,7 @@
       .modal-actions {
         display: flex;
         justify-content: center;
+        margin-top: 22px;
       }
 
       @keyframes shake {
@@ -565,12 +717,60 @@
       </div>
       
       <div class="modal-overlay" id="giftModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription">
-        <div class="modal">
-          <button class="close-button" id="closeModal" aria-label="Close gift modal">×</button>
-          <h3 id="modalTitle">Your Special Surprise</h3>
-          <p id="modalDescription">The gift is opening! Enjoy this sweet message made just for you. Click below to close it when you're ready.</p>
+        <div class="gallery-screen">
+          <button class="close-button" id="closeModal" aria-label="Close gift gallery">×</button>
+
+          <div class="gallery-header">
+            <p>For the love of my life</p>
+            <h3 id="modalTitle">A little piece of our sweetest memories</h3>
+          </div>
+
+          <div class="gallery-grid" id="modalDescription">
+            <div class="present-card" tabindex="0" role="button" aria-label="Open birthday memory 1">
+              <div class="gift-lid"></div>
+              <div class="gift-body"></div>
+              <div class="gift-content media-card">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Birthday celebration memory" />
+              </div>
+            </div>
+
+            <div class="present-card" tabindex="0" role="button" aria-label="Open birthday memory 2">
+              <div class="gift-lid"></div>
+              <div class="gift-body"></div>
+              <div class="gift-content media-card">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80" alt="Sweet portrait" />
+              </div>
+            </div>
+
+            <div class="present-card video-card" tabindex="0" role="button" aria-label="Open birthday video">
+              <div class="gift-lid"></div>
+              <div class="gift-body"></div>
+              <div class="gift-content media-card">
+                <video controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80">
+                  <source src="./temp_assets/Sketched_characters_ballroom_dan…_1080p_202608132008.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <div class="present-card" tabindex="0" role="button" aria-label="Open birthday memory 3">
+              <div class="gift-lid"></div>
+              <div class="gift-body"></div>
+              <div class="gift-content media-card">
+                <img src="https://images.unsplash.com/photo-1529528744093-6d7e8f7fbbf0?auto=format&fit=crop&w=900&q=80" alt="Beautiful day memory" />
+              </div>
+            </div>
+
+            <div class="present-card" tabindex="0" role="button" aria-label="Open birthday memory 4">
+              <div class="gift-lid"></div>
+              <div class="gift-body"></div>
+              <div class="gift-content media-card">
+                <img src="https://images.unsplash.com/photo-1521590832167-7ae0a4c14f86?auto=format&fit=crop&w=900&q=80" alt="Birthday surprise memory" />
+              </div>
+            </div>
+          </div>
+
           <div class="modal-actions">
-            <button class="modal-button" id="closeModalAction">Close</button>
+            <button class="modal-button" id="closeModalAction">Back to surprise</button>
           </div>
         </div>
       </div>
@@ -610,14 +810,17 @@
       const giftModal = document.getElementById('giftModal');
       const closeModal = document.getElementById('closeModal');
       const closeModalAction = document.getElementById('closeModalAction');
+      const presentCards = document.querySelectorAll('.present-card');
 
       function openGiftModal() {
         giftBox.classList.add('opened');
         giftModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
       }
 
       function closeGiftModal() {
         giftModal.classList.remove('show');
+        document.body.style.overflow = '';
       }
 
       giftBox.addEventListener('click', openGiftModal);
@@ -627,6 +830,21 @@
           openGiftModal();
         }
       });
+
+      presentCards.forEach(function (card) {
+        const openCard = function () {
+          card.classList.toggle('open');
+        };
+
+        card.addEventListener('click', openCard);
+        card.addEventListener('keydown', function (event) {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openCard();
+          }
+        });
+      });
+
       closeModal.addEventListener('click', closeGiftModal);
       closeModalAction.addEventListener('click', closeGiftModal);
       giftModal.addEventListener('click', function (event) {
