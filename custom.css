@@ -147,6 +147,193 @@
     }
 }
 
+.experience-section {
+  margin: 1rem 1rem 0;
+  border-radius: 0.5rem;
+  background: #D9D9D9;
+}
+
+.experience-inner {
+  padding: 5rem 6.25rem;
+}
+
+.experience-title-wrap {
+  position: relative;
+  width: fit-content;
+}
+
+.experience-title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: "Krona One", serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.experience-title-highlight {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0.2rem;
+  left: 0;
+  height: 1rem;
+  background: #FEF200;
+}
+
+.experience-intro {
+  max-width: 46rem;
+  margin: 1.25rem 0 2rem;
+  font-family: "Kufam", serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.experience-entry {
+  display: grid;
+  grid-template-columns: 1.25rem minmax(0, 1fr);
+  gap: 1.25rem;
+  max-width: 58rem;
+  padding-top: 1.5rem;
+}
+
+.experience-marker {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.35rem;
+}
+
+.experience-marker::after {
+  position: absolute;
+  top: 0.7rem;
+  bottom: -1.5rem;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.28);
+  content: "";
+}
+
+.experience-entry:last-of-type .experience-marker::after {
+  top: 0;
+  bottom: calc(100% - 0.7rem);
+}
+
+.experience-marker-dot {
+  position: relative;
+  z-index: 1;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 2px solid #111;
+  border-radius: 50%;
+  background: #FEF200;
+}
+
+.experience-marker-dot.is-current {
+  animation: current-position-pulse 1.6s ease-out infinite;
+}
+
+.experience-entry-content {
+  min-width: 0;
+  padding-bottom: 0.5rem;
+}
+
+.experience-entry-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.experience-status {
+  margin: 0 0 0.45rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.experience-role {
+  margin: 0;
+  font-family: "Krona One", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.experience-team,
+.experience-description {
+  font-family: "Kufam", serif;
+  line-height: 1.7;
+}
+
+.experience-team {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+.experience-description {
+  max-width: 46rem;
+  margin: 1rem 0 0;
+  font-size: 1rem;
+}
+
+.experience-company-logo {
+  display: block;
+  width: 6.5rem;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+@keyframes current-position-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(254, 242, 0, 0.9);
+  }
+  70% {
+    box-shadow: 0 0 0 0.55rem rgba(254, 242, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(254, 242, 0, 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .experience-inner {
+    padding: 2.5rem 1.5625rem;
+  }
+
+  .experience-title {
+    font-size: 1.75rem;
+  }
+
+  .experience-intro {
+    font-size: 0.9375rem;
+  }
+
+  .experience-entry-heading {
+    align-items: flex-start;
+  }
+
+  .experience-company-logo {
+    width: 4rem;
+  }
+
+  .experience-role {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .experience-entry-heading {
+    flex-direction: column-reverse;
+    gap: 0.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-marker-dot.is-current {
+    animation: none;
+  }
+}
+
 /* filter for the grainy texture  */
 /* body::before {
   content: '';
